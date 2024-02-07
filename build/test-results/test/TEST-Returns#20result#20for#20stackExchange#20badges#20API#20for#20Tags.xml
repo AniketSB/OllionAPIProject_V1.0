@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Returns result for stackExchange badges API for Tags" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-02-07T06:41:03" hostname="ANIKETs-MacBook-Pro.local" time="9.141">
+  <properties/>
+  <testcase name="Get the badges identified by tags." classname="Returns result for stackExchange badges API for Tags" time="1.874"/>
+  <testcase name="To verify get badges endpoint returns error response for incorrect tags #1" classname="Returns result for stackExchange badges API for Tags" time="1.724"/>
+  <testcase name="To verify get badges endpoint returns error response for incorrect tags #2" classname="Returns result for stackExchange badges API for Tags" time="1.739"/>
+  <testcase name="To verify get badges endpoint returns error response for incorrect tags #3" classname="Returns result for stackExchange badges API for Tags" time="1.85"/>
+  <testcase name="To verify get badges endpoint returns correct error message for incorrect tags" classname="Returns result for stackExchange badges API for Tags" time="1.954"/>
+  <system-out><![CDATA[
+@BadgesAPI @HappyPath
+Scenario Outline: Get the badges identified by tags.              # src/test/resources/cucumber.features/GetBadgesTags.feature:10
+07-02-2024 12:11:05.153 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [b58ca296-71d6-419a-aebd-45bbc67f6465] ##
+Request method:	GET
+Request path:	https://api.stackexchange.com/2.3/badges/tags?order=desc&sort=rank&site=stackoverflow
+Request params:	<none>
+Query params:	order=desc
+				sort=rank
+				site=stackoverflow
+Path params:	<none>
+Headers:		Accept=*/*
+Body:			<none>
+07-02-2024 12:11:05.172 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [b58ca296-71d6-419a-aebd-45bbc67f6465] ##
+HTTP/1.1 200 OK
+cache-control: private
+content-length: 738
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+strict-transport-security: max-age=15552000
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST
+access-control-allow-credentials: false
+x-content-type-options: nosniff
+x-request-guid: f44605a8-d775-4b2a-91ed-15983b715451
+set-cookie: prov=941dc0c4-ed7a-4710-a842-096cb21b957b; expires=Fri, 07 Feb 2025 06:41:04 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
+date: Wed, 07 Feb 2024 06:41:04 GMT
+prov=941dc0c4-ed7a-4710-a842-096cb21b957b;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+    "items": [
+        {
+            "badge_type": "tag_based",
+            "award_count": 1276,
+            "rank": "bronze",
+            "badge_id": 899,
+            "link": "https://stackoverflow.com/badges/899/node-js",
+            "name": "node.js"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 6505,
+            "link": "https://stackoverflow.com/badges/6505/nodemcu",
+            "name": "nodemcu"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 2,
+            "rank": "bronze",
+            "badge_id": 7955,
+            "link": "https://stackoverflow.com/badges/7955/node-modules",
+            "name": "node-modules"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 6978,
+            "link": "https://stackoverflow.com/badges/6978/node-mongodb-native",
+            "name": "node-mongodb-native"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 10894,
+            "link": "https://stackoverflow.com/badges/10894/node-oracledb",
+            "name": "node-oracledb"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 10162,
+            "link": "https://stackoverflow.com/badges/10162/node-postgres",
+            "name": "node-postgres"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 2,
+            "rank": "bronze",
+            "badge_id": 6458,
+            "link": "https://stackoverflow.com/badges/6458/node-red",
+            "name": "node-red"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 10140,
+            "link": "https://stackoverflow.com/badges/10140/node-sass",
+            "name": "node-sass"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 12,
+            "rank": "bronze",
+            "badge_id": 1458,
+            "link": "https://stackoverflow.com/badges/1458/nokogiri",
+            "name": "nokogiri"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 8773,
+            "link": "https://stackoverflow.com/badges/8773/nonblocking",
+            "name": "nonblocking"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 5105,
+            "link": "https://stackoverflow.com/badges/5105/non-clustered-index",
+            "name": "non-clustered-index"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 5179,
+            "link": "https://stackoverflow.com/badges/5179/nonetype",
+            "name": "nonetype"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 2,
+            "rank": "bronze",
+            "badge_id": 2495,
+            "link": "https://stackoverflow.com/badges/2495/normalization",
+            "name": "normalization"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 6060,
+            "link": "https://stackoverflow.com/badges/6060/normals",
+            "name": "normals"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 2,
+            "rank": "bronze",
+            "badge_id": 5922,
+            "link": "https://stackoverflow.com/badges/5922/nose",
+            "name": "nose"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 37,
+            "rank": "bronze",
+            "badge_id": 1007,
+            "link": "https://stackoverflow.com/badges/1007/nosql",
+            "name": "nosql"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 17,
+            "rank": "bronze",
+            "badge_id": 1717,
+            "link": "https://stackoverflow.com/badges/1717/notepad",
+            "name": "notepad++"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 5,
+            "rank": "bronze",
+            "badge_id": 1720,
+            "link": "https://stackoverflow.com/badges/1720/notifications",
+            "name": "notifications"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 10948,
+            "link": "https://stackoverflow.com/badges/10948/notify",
+            "name": "notify"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 4900,
+            "link": "https://stackoverflow.com/badges/4900/notifyicon",
+            "name": "notifyicon"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 9002,
+            "link": "https://stackoverflow.com/badges/9002/nouislider",
+            "name": "nouislider"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 4581,
+            "link": "https://stackoverflow.com/badges/4581/np",
+            "name": "np"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 3,
+            "rank": "bronze",
+            "badge_id": 1462,
+            "link": "https://stackoverflow.com/badges/1462/npapi",
+            "name": "npapi"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 6547,
+            "link": "https://stackoverflow.com/badges/6547/npgsql",
+            "name": "npgsql"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 43,
+            "rank": "bronze",
+            "badge_id": 3310,
+            "link": "https://stackoverflow.com/badges/3310/npm",
+            "name": "npm"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 11624,
+            "link": "https://stackoverflow.com/badges/11624/npm-install",
+            "name": "npm-install"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 8452,
+            "link": "https://stackoverflow.com/badges/8452/npm-scripts",
+            "name": "npm-scripts"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 18,
+            "rank": "bronze",
+            "badge_id": 999,
+            "link": "https://stackoverflow.com/badges/999/nsarray",
+            "name": "nsarray"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 8455,
+            "link": "https://stackoverflow.com/badges/8455/nsarraycontroller",
+            "name": "nsarraycontroller"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 4,
+            "rank": "bronze",
+            "badge_id": 5675,
+            "link": "https://stackoverflow.com/badges/5675/nsattributedstring",
+            "name": "nsattributedstring"
+        }
+    ],
+    "has_more": true,
+    "quota_max": 300,
+    "quota_remaining": 293
+}
+
+  Given user call the get endpoint to get badges "ALL" for 'tags' # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
+  Then user receive a 200 HTTP response                           # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
+
+@BadgesAPI @UnhappyPath
+Scenario Outline: To verify get badges endpoint returns error response for incorrect tags # src/test/resources/cucumber.features/GetBadgesTags.feature:18
+07-02-2024 12:11:06.897 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [32c9752b-e396-401f-baee-64d3c4fb8bbb] ##
+Request method:	GET
+Request path:	https://api.stackexchange.com/2.3/badges/111ee/tags?order=desc&sort=rank&site=stackoverflow
+Request params:	<none>
+Query params:	order=desc
+				sort=rank
+				site=stackoverflow
+Path params:	<none>
+Headers:		Accept=*/*
+Body:			<none>
+07-02-2024 12:11:06.900 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [32c9752b-e396-401f-baee-64d3c4fb8bbb] ##
+HTTP/1.1 400 Bad Request
+cache-control: private
+content-length: 97
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+strict-transport-security: max-age=15552000
+x-error-status: 404
+x-error-name: no_method
+x-error-message: no method found with this name
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST
+access-control-allow-credentials: false
+x-content-type-options: nosniff
+x-request-guid: d06422d7-99ca-41ac-b856-3ada5141117a
+set-cookie: prov=8dbf445d-2ac2-4ad4-834f-3ff572ce8d1a; expires=Fri, 07 Feb 2025 06:41:06 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
+date: Wed, 07 Feb 2024 06:41:06 GMT
+prov=8dbf445d-2ac2-4ad4-834f-3ff572ce8d1a;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+    "error_id": 404,
+    "error_message": "no method found with this name",
+    "error_name": "no_method"
+}
+
+  Given user call the get endpoint to get badges "111ee" for 'tags'                       # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
+  Then user receive a 400 HTTP response                                                   # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
+
+@BadgesAPI @UnhappyPath
+Scenario Outline: To verify get badges endpoint returns error response for incorrect tags # src/test/resources/cucumber.features/GetBadgesTags.feature:19
+07-02-2024 12:11:08.633 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [cdb15918-0c8c-4b58-accd-a9806c21fe89] ##
+Request method:	GET
+Request path:	https://api.stackexchange.com/2.3/badges/269/tags?order=desc&sort=rank&site=stackoverflow
+Request params:	<none>
+Query params:	order=desc
+				sort=rank
+				site=stackoverflow
+Path params:	<none>
+Headers:		Accept=*/*
+Body:			<none>
+07-02-2024 12:11:08.635 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [cdb15918-0c8c-4b58-accd-a9806c21fe89] ##
+HTTP/1.1 400 Bad Request
+cache-control: private
+content-length: 97
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+strict-transport-security: max-age=15552000
+x-error-status: 404
+x-error-name: no_method
+x-error-message: no method found with this name
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST
+access-control-allow-credentials: false
+x-content-type-options: nosniff
+x-request-guid: e5900de6-eb79-4ba1-8c57-906a45e1ae7c
+set-cookie: prov=13de35cc-3dd3-4ea8-9af2-99fce7b91266; expires=Fri, 07 Feb 2025 06:41:08 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
+date: Wed, 07 Feb 2024 06:41:07 GMT
+prov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+    "error_id": 404,
+    "error_message": "no method found with this name",
+    "error_name": "no_method"
+}
+
+  Given user call the get endpoint to get badges "269" for 'tags'                         # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
+  Then user receive a 400 HTTP response                                                   # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
+
+@BadgesAPI @UnhappyPath
+Scenario Outline: To verify get badges endpoint returns error response for incorrect tags # src/test/resources/cucumber.features/GetBadgesTags.feature:20
+07-02-2024 12:11:10.478 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [73f6d091-66bb-4fee-98e3-d69f5c9a3441] ##
+Request method:	GET
+Request path:	https://api.stackexchange.com/2.3/badges%2F%2Ftags?order=desc&sort=rank&site=stackoverflow
+Request params:	<none>
+Query params:	order=desc
+				sort=rank
+				site=stackoverflow
+Path params:	<none>
+Headers:		Accept=*/*
+Body:			<none>
+07-02-2024 12:11:10.482 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [73f6d091-66bb-4fee-98e3-d69f5c9a3441] ##
+HTTP/1.1 400 Bad Request
+cache-control: private
+content-length: 97
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+strict-transport-security: max-age=15552000
+x-error-status: 404
+x-error-name: no_method
+x-error-message: no method found with this name
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST
+access-control-allow-credentials: false
+x-content-type-options: nosniff
+x-request-guid: 2c8bb4af-01ec-4db1-92e0-3743a9ad2bc0
+set-cookie: prov=3e20974a-1b6c-4d72-923c-0f196e2bf395; expires=Fri, 07 Feb 2025 06:41:10 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
+date: Wed, 07 Feb 2024 06:41:09 GMT
+prov=3e20974a-1b6c-4d72-923c-0f196e2bf395;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+    "error_id": 404,
+    "error_message": "no method found with this name",
+    "error_name": "no_method"
+}
+
+  Given user call the get endpoint to get badges "" for 'tags'                            # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
+  Then user receive a 400 HTTP response                                                   # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
+
+@BadgesAPI @UnhappyPath
+Scenario Outline: To verify get badges endpoint returns correct error message for incorrect tags # src/test/resources/cucumber.features/GetBadgesTags.feature:31
+07-02-2024 12:11:12.343 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [cbde29e1-6122-4430-bc8b-31fc391685e7] ##
+Request method:	GET
+Request path:	https://api.stackexchange.com/2.3/badges/555yt/tags?order=desc&sort=rank&site=stackoverflow
+Request params:	<none>
+Query params:	order=desc
+				sort=rank
+				site=stackoverflow
+Path params:	<none>
+Headers:		Accept=*/*
+Body:			<none>
+07-02-2024 12:11:12.352 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [cbde29e1-6122-4430-bc8b-31fc391685e7] ##
+HTTP/1.1 400 Bad Request
+cache-control: private
+content-length: 97
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+strict-transport-security: max-age=15552000
+x-error-status: 404
+x-error-name: no_method
+x-error-message: no method found with this name
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST
+access-control-allow-credentials: false
+x-content-type-options: nosniff
+x-request-guid: 81a991f6-d2d1-4139-9180-2cb67775d747
+set-cookie: prov=a35b7925-7107-4dfc-9e57-061b60a62d02; expires=Fri, 07 Feb 2025 06:41:12 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
+date: Wed, 07 Feb 2024 06:41:11 GMT
+prov=a35b7925-7107-4dfc-9e57-061b60a62d02;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+    "error_id": 404,
+    "error_message": "no method found with this name",
+    "error_name": "no_method"
+}
+
+  Given user call the get endpoint to get badges "555yt" for 'tags'                              # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
+  Then user receive a 400 HTTP response                                                          # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
+  And verify response parameters are available                                                   # com.example.stackExchange.stepdefs.GeneralSteps.verifyresponseparametersavailable(java.util.List<java.util.List<java.lang.String>>)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

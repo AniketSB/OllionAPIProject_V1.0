@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Returns result for stackExchange badges API #2</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Returns result for stackExchange badges API #2</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Returns result for stackExchange badges API #2</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">8.713s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Get badges recently awarded on the site. #1</td>
+<td class="success">1.858s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Get badges recently awarded on the site. #2</td>
+<td class="success">1.819s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">To verify get badges endpoint returns error response for incorrect badge id #1</td>
+<td class="success">1.756s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">To verify get badges endpoint returns error response for incorrect badge id #2</td>
+<td class="success">1.593s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">To verify get badges endpoint returns error response for incorrect badge id #3</td>
+<td class="success">1.687s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+@BadgesAPI @HappyPath
+Scenario Outline: Get badges recently awarded on the site.              # src/test/resources/cucumber.features/GetRecipients.feature:10
+07-02-2024 12:11:14.277 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [5dc00d29-be61-4700-a718-b0aa2926293b] ##
+Request method:	GET
+Request path:	https://api.stackexchange.com/2.3/badges/recipients?site=stackoverflow
+Request params:	&lt;none&gt;
+Query params:	site=stackoverflow
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Body:			&lt;none&gt;
+07-02-2024 12:11:14.294 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [5dc00d29-be61-4700-a718-b0aa2926293b] ##
+HTTP/1.1 200 OK
+cache-control: private
+content-length: 2339
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+strict-transport-security: max-age=15552000
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST
+access-control-allow-credentials: false
+x-content-type-options: nosniff
+x-request-guid: 0344f8f0-5d4f-4344-9dbf-f22db213e0c3
+set-cookie: prov=c30af832-0375-43b9-8027-e1f7cb0f674f; expires=Fri, 07 Feb 2025 06:41:14 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
+date: Wed, 07 Feb 2024 06:41:13 GMT
+prov=c30af832-0375-43b9-8027-e1f7cb0f674f;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+    &quot;items&quot;: [
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 30481096,
+                &quot;reputation&quot;: 1,
+                &quot;user_id&quot;: 23358596,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://i.stack.imgur.com/Beg8I.jpg?s=256&amp;g=1&quot;,
+                &quot;display_name&quot;: &quot;Willy&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/23358596/willy&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 2600,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/2600/informed&quot;,
+            &quot;name&quot;: &quot;Informed&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 30481092,
+                &quot;reputation&quot;: 1,
+                &quot;user_id&quot;: 23358594,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/9f60ca8fb8d5ae448911bd1bae2b56f0?s=256&amp;d=identicon&amp;r=PG&amp;f=y&amp;so-version=2&quot;,
+                &quot;display_name&quot;: &quot;Zifadul&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/23358594/zifadul&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 2600,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/2600/informed&quot;,
+            &quot;name&quot;: &quot;Informed&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 30481088,
+                &quot;reputation&quot;: 1,
+                &quot;user_id&quot;: 23358591,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://i.stack.imgur.com/lQ1XJ.jpg?s=256&amp;g=1&quot;,
+                &quot;display_name&quot;: &quot;Anil Kumar&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/23358591/anil-kumar&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 2600,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/2600/informed&quot;,
+            &quot;name&quot;: &quot;Informed&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 25526845,
+                &quot;reputation&quot;: 1,
+                &quot;user_id&quot;: 19315750,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://lh3.googleusercontent.com/a-/AOh14Gg1k9iWxbN1EpTtpr_E9xMF8ZuZvNPQMkUVrtTc=k-s256&quot;,
+                &quot;display_name&quot;: &quot;wooblydog&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/19315750/wooblydog&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 2600,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/2600/informed&quot;,
+            &quot;name&quot;: &quot;Informed&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 30481073,
+                &quot;reputation&quot;: 1,
+                &quot;user_id&quot;: 23358577,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://lh3.googleusercontent.com/a/ACg8ocKgzgYzMhzA6uYOqv1I9BXGr3goaYEjQeD_YRyI7sJd=k-s256&quot;,
+                &quot;display_name&quot;: &quot;Pratik Naik&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/23358577/pratik-naik&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 2600,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/2600/informed&quot;,
+            &quot;name&quot;: &quot;Informed&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 9628531,
+                &quot;reputation&quot;: 13,
+                &quot;user_id&quot;: 7147339,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/9390542b84d3922e6ae60158f89d3da0?s=256&amp;d=identicon&amp;r=PG&amp;f=y&amp;so-version=2&quot;,
+                &quot;display_name&quot;: &quot;MARK&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/7147339/mark&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 9,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/9/autobiographer&quot;,
+            &quot;name&quot;: &quot;Autobiographer&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 30429271,
+                &quot;reputation&quot;: 1,
+                &quot;user_id&quot;: 23358561,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/ac083150956cc24043ca391e627ea672?s=256&amp;d=identicon&amp;r=PG&amp;f=y&amp;so-version=2&quot;,
+                &quot;display_name&quot;: &quot;softwin systems&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/23358561/softwin-systems&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 9,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/9/autobiographer&quot;,
+            &quot;name&quot;: &quot;Autobiographer&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 30480751,
+                &quot;reputation&quot;: 1,
+                &quot;user_id&quot;: 23358330,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://lh3.googleusercontent.com/a/ACg8ocKPhvCKesM7OwbqMPRlv0kBZhEezjmVmEgUTlp-_pe-jwY=k-s256&quot;,
+                &quot;display_name&quot;: &quot;SGSG&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/23358330/sgsg&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 3,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/3/editor&quot;,
+            &quot;name&quot;: &quot;Editor&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 30480919,
+                &quot;reputation&quot;: 1,
+                &quot;user_id&quot;: 23358455,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://lh3.googleusercontent.com/a/ACg8ocJetXt2cJmLq9zgSS0yTJMNHhlGrvytQXTMOjcZtdha=k-s256&quot;,
+                &quot;display_name&quot;: &quot;Stephen Chrzan&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/23358455/stephen-chrzan&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 3,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/3/editor&quot;,
+            &quot;name&quot;: &quot;Editor&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 11755210,
+                &quot;reputation&quot;: 97,
+                &quot;user_id&quot;: 8603123,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://lh4.googleusercontent.com/--Anwppddgu0/AAAAAAAAAAI/AAAAAAAAABE/54hlyNsV8aw/photo.jpg?sz=256&quot;,
+                &quot;display_name&quot;: &quot;kiran girase&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/8603123/kiran-girase&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 26,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/26/popular-question&quot;,
+            &quot;name&quot;: &quot;Popular Question&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 17807940,
+                &quot;reputation&quot;: 33,
+                &quot;user_id&quot;: 12933240,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/91dee11853d6a239eb5686993f3f38a6?s=256&amp;d=identicon&amp;r=PG&amp;f=y&amp;so-version=2&quot;,
+                &quot;display_name&quot;: &quot;elafito&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/12933240/elafito&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 26,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/26/popular-question&quot;,
+            &quot;name&quot;: &quot;Popular Question&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 15159703,
+                &quot;reputation&quot;: 1255,
+                &quot;user_id&quot;: 11092881,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/4cd7bff435b19b5d83ad4e661fe6a0d2?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;Sayaman&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/11092881/sayaman&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 26,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/26/popular-question&quot;,
+            &quot;name&quot;: &quot;Popular Question&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 10708217,
+                &quot;reputation&quot;: 2029,
+                &quot;user_id&quot;: 7881234,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/45969bca4cac3d70019d9f8f20cfca70?s=256&amp;d=identicon&amp;r=PG&amp;f=y&amp;so-version=2&quot;,
+                &quot;display_name&quot;: &quot;doobean&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/7881234/doobean&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 26,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/26/popular-question&quot;,
+            &quot;name&quot;: &quot;Popular Question&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 4129227,
+                &quot;reputation&quot;: 611,
+                &quot;user_id&quot;: 3387542,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;accept_rate&quot;: 75,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/142a29b33fc25d8c730f7b761482328f?s=256&amp;d=identicon&amp;r=PG&amp;f=y&amp;so-version=2&quot;,
+                &quot;display_name&quot;: &quot;user3387542&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/3387542/user3387542&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 26,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/26/popular-question&quot;,
+            &quot;name&quot;: &quot;Popular Question&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 2590908,
+                &quot;reputation&quot;: 849,
+                &quot;user_id&quot;: 2245633,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;accept_rate&quot;: 18,
+                &quot;profile_image&quot;: &quot;https://i.stack.imgur.com/SLpQK.gif?s=256&amp;g=1&quot;,
+                &quot;display_name&quot;: &quot;CodeGorilla&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/2245633/codegorilla&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 26,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/26/popular-question&quot;,
+            &quot;name&quot;: &quot;Popular Question&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 13096876,
+                &quot;reputation&quot;: 17,
+                &quot;user_id&quot;: 9791040,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/5f6e44cce14566026d05cfc3ba6c1bb2?s=256&amp;d=identicon&amp;r=PG&amp;f=y&amp;so-version=2&quot;,
+                &quot;display_name&quot;: &quot;Marc Sharma&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/9791040/marc-sharma&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 26,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/26/popular-question&quot;,
+            &quot;name&quot;: &quot;Popular Question&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 10447347,
+                &quot;reputation&quot;: 77,
+                &quot;user_id&quot;: 7702004,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/18d2e6ef5ad221dc42174730e6bada67?s=256&amp;d=identicon&amp;r=PG&amp;f=y&amp;so-version=2&quot;,
+                &quot;display_name&quot;: &quot;Mahesh cm&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/7702004/mahesh-cm&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 26,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/26/popular-question&quot;,
+            &quot;name&quot;: &quot;Popular Question&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 25102417,
+                &quot;reputation&quot;: 13,
+                &quot;user_id&quot;: 18952978,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/98af7dbbe5980624606c5d16ee3abbdd?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;jesu&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/18952978/jesu&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 26,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/26/popular-question&quot;,
+            &quot;name&quot;: &quot;Popular Question&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 1967050,
+                &quot;reputation&quot;: 5019,
+                &quot;user_id&quot;: 1767006,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;accept_rate&quot;: 81,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/33a323193535eac49f2acdad69e44dfa?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;RandomGuy&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/1767006/randomguy&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 26,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/26/popular-question&quot;,
+            &quot;name&quot;: &quot;Popular Question&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 21918179,
+                &quot;reputation&quot;: 65,
+                &quot;user_id&quot;: 17122431,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/369451481a01c6081dd940b4116c879d?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;Paul&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/17122431/paul&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 26,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/26/popular-question&quot;,
+            &quot;name&quot;: &quot;Popular Question&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 1764923,
+                &quot;reputation&quot;: 29,
+                &quot;user_id&quot;: 1610993,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/b58f2b90e152a1da689823e996daeeb4?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;i.calixto&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/1610993/i-calixto&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 26,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/26/popular-question&quot;,
+            &quot;name&quot;: &quot;Popular Question&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 23809895,
+                &quot;reputation&quot;: 21,
+                &quot;user_id&quot;: 17818822,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/21e4e9d7e290d2b66fe8a5f689fe25fb?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;eliasbauer&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/17818822/eliasbauer&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 2,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/2/student&quot;,
+            &quot;name&quot;: &quot;Student&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 29260584,
+                &quot;reputation&quot;: 17,
+                &quot;user_id&quot;: 22417655,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://lh3.googleusercontent.com/a/AAcHTtfIhtiLuew09OH5VX0TU2wxs5xwVIhp9sqJBxYlV5ds=k-s256&quot;,
+                &quot;display_name&quot;: &quot;Christopher&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/22417655/christopher&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 2,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/2/student&quot;,
+            &quot;name&quot;: &quot;Student&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 15562287,
+                &quot;reputation&quot;: 13,
+                &quot;user_id&quot;: 11227114,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/6f75dd1f3fb30a20779aab27a2377f56?s=256&amp;d=identicon&amp;r=PG&amp;f=y&amp;so-version=2&quot;,
+                &quot;display_name&quot;: &quot;ogre9000&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/11227114/ogre9000&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 2,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/2/student&quot;,
+            &quot;name&quot;: &quot;Student&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 30480721,
+                &quot;reputation&quot;: 11,
+                &quot;user_id&quot;: 23358305,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://lh3.googleusercontent.com/a/ACg8ocLgXaGfCpz7ntmI6ZEd5SFXGxeZXnrVn1LNUxKfuW3wBQ=k-s256&quot;,
+                &quot;display_name&quot;: &quot;Mauro Bocanegra&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/23358305/mauro-bocanegra&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 2,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/2/student&quot;,
+            &quot;name&quot;: &quot;Student&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 29260584,
+                &quot;reputation&quot;: 17,
+                &quot;user_id&quot;: 22417655,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://lh3.googleusercontent.com/a/AAcHTtfIhtiLuew09OH5VX0TU2wxs5xwVIhp9sqJBxYlV5ds=k-s256&quot;,
+                &quot;display_name&quot;: &quot;Christopher&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/22417655/christopher&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 6,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/6/supporter&quot;,
+            &quot;name&quot;: &quot;Supporter&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 21689925,
+                &quot;reputation&quot;: 48,
+                &quot;user_id&quot;: 16004667,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://lh3.googleusercontent.com/a-/AOh14Gg3ExHbqGdXxUauNavLSHL-8nI5iQn8AuvjLRcu=k-s256&quot;,
+                &quot;display_name&quot;: &quot;Avishka Perera&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/16004667/avishka-perera&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 6,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/6/supporter&quot;,
+            &quot;name&quot;: &quot;Supporter&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 1844775,
+                &quot;reputation&quot;: 10874,
+                &quot;user_id&quot;: 1673376,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;accept_rate&quot;: 65,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/64ba24b6800eafa4a85622c97edf8051?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;zloctb&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/1673376/zloctb&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 23,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/23/nice-answer&quot;,
+            &quot;name&quot;: &quot;Nice Answer&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 9193,
+                &quot;reputation&quot;: 343647,
+                &quot;user_id&quot;: 16883,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;accept_rate&quot;: 83,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/0382297f273df0a544b0c6c2734de096?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;Michael Borgwardt&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/16883/michael-borgwardt&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;silver&quot;,
+            &quot;badge_id&quot;: 24,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/24/good-answer&quot;,
+            &quot;name&quot;: &quot;Good Answer&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 13770793,
+                &quot;reputation&quot;: 26499,
+                &quot;user_id&quot;: 9938317,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/1da6c491ff1592bb1fe4f57d9ad1c840?s=256&amp;d=identicon&amp;r=PG&amp;f=y&amp;so-version=2&quot;,
+                &quot;display_name&quot;: &quot;rioV8&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/9938317/riov8&quot;
+            },
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;rank&quot;: &quot;silver&quot;,
+            &quot;badge_id&quot;: 24,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/24/good-answer&quot;,
+            &quot;name&quot;: &quot;Good Answer&quot;
+        }
+    ],
+    &quot;has_more&quot;: true,
+    &quot;quota_max&quot;: 300,
+    &quot;quota_remaining&quot;: 288
+}
+
+  Given user call the get endpoint to get badges &quot;ALL&quot; for 'recipients' # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
+  Then user receive a 200 HTTP response                                 # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
+
+@BadgesAPI @HappyPath
+Scenario Outline: Get badges recently awarded on the site.              # src/test/resources/cucumber.features/GetRecipients.feature:11
+07-02-2024 12:11:16.114 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [2693d8b9-eb87-41e5-b2de-49c5caf9e0dc] ##
+Request method:	GET
+Request path:	https://api.stackexchange.com/2.3/badges/263/recipients?site=stackoverflow
+Request params:	&lt;none&gt;
+Query params:	site=stackoverflow
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Body:			&lt;none&gt;
+07-02-2024 12:11:16.122 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [2693d8b9-eb87-41e5-b2de-49c5caf9e0dc] ##
+HTTP/1.1 200 OK
+cache-control: private
+content-length: 2195
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+strict-transport-security: max-age=15552000
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST
+access-control-allow-credentials: false
+x-content-type-options: nosniff
+x-request-guid: 941d6626-9c13-4973-bd01-8436609ab59e
+set-cookie: prov=a909546c-ef70-4918-99d0-afcda5de35c0; expires=Fri, 07 Feb 2025 06:41:15 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
+date: Wed, 07 Feb 2024 06:41:15 GMT
+prov=a909546c-ef70-4918-99d0-afcda5de35c0;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+    &quot;items&quot;: [
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 2527500,
+                &quot;reputation&quot;: 7308,
+                &quot;user_id&quot;: 2196561,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/ac22ef3edb7836c3af11f5511f7942f8?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;Ebbe M. Pedersen&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/2196561/ebbe-m-pedersen&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 164368,
+                &quot;reputation&quot;: 105346,
+                &quot;user_id&quot;: 387076,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;accept_rate&quot;: 47,
+                &quot;profile_image&quot;: &quot;https://i.stack.imgur.com/cFyP6.jpg?s=256&amp;g=1&quot;,
+                &quot;display_name&quot;: &quot;Gilles &amp;#39;SO- stop being evil&amp;#39;&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/387076/gilles-so-stop-being-evil&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 74808,
+                &quot;reputation&quot;: 78865,
+                &quot;user_id&quot;: 214790,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/f878c8230342730990acd21f889301d4?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;matt&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/214790/matt&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 899926,
+                &quot;reputation&quot;: 5190,
+                &quot;user_id&quot;: 1820553,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://lh4.googleusercontent.com/-NZb6uZzo4Gg/AAAAAAAAAAI/AAAAAAAAAo0/xTr6RvgMTRw/photo.jpg?sz=256&quot;,
+                &quot;display_name&quot;: &quot;kelalaka&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/1820553/kelalaka&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 12359353,
+                &quot;reputation&quot;: 43710,
+                &quot;user_id&quot;: 9014097,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://i.stack.imgur.com/Y9EVM.jpg?s=256&amp;g=1&quot;,
+                &quot;display_name&quot;: &quot;Topaco&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/9014097/topaco&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 1903131,
+                &quot;reputation&quot;: 9647,
+                &quot;user_id&quot;: 1718554,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;accept_rate&quot;: 85,
+                &quot;profile_image&quot;: &quot;https://i.stack.imgur.com/IJmBL.jpg?s=256&amp;g=1&quot;,
+                &quot;display_name&quot;: &quot;Luke Joshua Park&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/1718554/luke-joshua-park&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 154146,
+                &quot;reputation&quot;: 13714,
+                &quot;user_id&quot;: 369874,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;accept_rate&quot;: 100,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/81f310942fe5989105a6b474cda4c843?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;Paul Kehrer&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/369874/paul-kehrer&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 155770,
+                &quot;reputation&quot;: 120563,
+                &quot;user_id&quot;: 372643,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;accept_rate&quot;: 88,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/63edcce213b4c96b8b4a660e1df2da08?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;Bruno&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/372643/bruno&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 8497217,
+                &quot;reputation&quot;: 38102,
+                &quot;user_id&quot;: 6371459,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;accept_rate&quot;: 25,
+                &quot;profile_image&quot;: &quot;https://i.stack.imgur.com/0DDLp.jpg?s=256&amp;g=1&quot;,
+                &quot;display_name&quot;: &quot;pedrofb&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/6371459/pedrofb&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 178805,
+                &quot;reputation&quot;: 49604,
+                &quot;user_id&quot;: 411022,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://i.stack.imgur.com/VIYKv.png?s=256&amp;g=1&quot;,
+                &quot;display_name&quot;: &quot;Ilmari Karonen&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/411022/ilmari-karonen&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 955548,
+                &quot;reputation&quot;: 3479,
+                &quot;user_id&quot;: 980922,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;accept_rate&quot;: 62,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/113cac87e662e7150d6d48eb3efac502?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;imichaelmiers&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/980922/imichaelmiers&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 3421244,
+                &quot;reputation&quot;: 36403,
+                &quot;user_id&quot;: 2868801,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/3f265dbe3edef5d671947a604f7171bf?s=256&amp;d=identicon&amp;r=PG&amp;f=y&amp;so-version=2&quot;,
+                &quot;display_name&quot;: &quot;dave_thompson_085&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/2868801/dave-thompson-085&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 34424,
+                &quot;reputation&quot;: 290386,
+                &quot;user_id&quot;: 97337,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;accept_rate&quot;: 100,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/ed9a0d8cd44b62539b141f6c10405db1?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;Rob Napier&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/97337/rob-napier&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 50968,
+                &quot;reputation&quot;: 8295,
+                &quot;user_id&quot;: 152148,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;accept_rate&quot;: 80,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/18dc6b2a4bd8184afd75f9fb995bf260?s=256&amp;d=identicon&amp;r=PG&amp;f=y&amp;so-version=2&quot;,
+                &quot;display_name&quot;: &quot;Jack Lloyd&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/152148/jack-lloyd&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 223210,
+                &quot;reputation&quot;: 7686,
+                &quot;user_id&quot;: 482262,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://i.stack.imgur.com/gu30Y.jpg?s=256&amp;g=1&quot;,
+                &quot;display_name&quot;: &quot;SquareRootOfTwentyThree&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/482262/squarerootoftwentythree&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 60200,
+                &quot;reputation&quot;: 481659,
+                &quot;user_id&quot;: 179910,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/d8962238339d771f0348967be6f97b1b?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;Jerry Coffin&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/179910/jerry-coffin&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 8737108,
+                &quot;reputation&quot;: 31155,
+                &quot;user_id&quot;: 6535399,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://i.stack.imgur.com/x5vsS.jpg?s=256&amp;g=1&quot;,
+                &quot;display_name&quot;: &quot;bartonjs&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/6535399/bartonjs&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 301110,
+                &quot;reputation&quot;: 99433,
+                &quot;user_id&quot;: 608639,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;accept_rate&quot;: 64,
+                &quot;profile_image&quot;: &quot;https://i.stack.imgur.com/aPIhh.jpg?s=256&amp;g=1&quot;,
+                &quot;display_name&quot;: &quot;jww&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/608639/jww&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 362760,
+                &quot;reputation&quot;: 10207,
+                &quot;user_id&quot;: 706119,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/f445ccf3d91c8f3b19b0ba4d8ba1e702?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;DarkSquirrel42&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/706119/darksquirrel42&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 203680,
+                &quot;reputation&quot;: 112158,
+                &quot;user_id&quot;: 451475,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;accept_rate&quot;: 100,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/a632afa4c11779c0cabd7df04eb26ba6?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;zaph&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/451475/zaph&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 2564038,
+                &quot;reputation&quot;: 33840,
+                &quot;user_id&quot;: 2224584,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;accept_rate&quot;: 83,
+                &quot;profile_image&quot;: &quot;https://i.stack.imgur.com/gbVrH.png?s=256&amp;g=1&quot;,
+                &quot;display_name&quot;: &quot;Scott Arciszewski&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/2224584/scott-arciszewski&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 2033317,
+                &quot;reputation&quot;: 61413,
+                &quot;user_id&quot;: 1816580,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/f30e6b41f1e2bd48b058e8e72c1f0f57?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;Artjom B.&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/1816580/artjom-b&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 161079,
+                &quot;reputation&quot;: 23531,
+                &quot;user_id&quot;: 381588,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/5cff6fe4f2e32e4ae131e65a0fda7f88?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;Iridium&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/381588/iridium&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 2821163,
+                &quot;reputation&quot;: 5724,
+                &quot;user_id&quot;: 2424896,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/ca89cd2050b8c0c5c5cb8966dbe99b6e?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;ntoskrnl&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/2424896/ntoskrnl&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 218057,
+                &quot;reputation&quot;: 68028,
+                &quot;user_id&quot;: 474189,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;accept_rate&quot;: 72,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/32b712ec4f7dcc2e8a6907b9903aa8ba?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;Duncan Jones&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/474189/duncan-jones&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 319817,
+                &quot;reputation&quot;: 31538,
+                &quot;user_id&quot;: 637783,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;accept_rate&quot;: 100,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/ec2aae51f1bd526a20c04158ba5c7b62?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;jbtule&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/637783/jbtule&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 434266,
+                &quot;reputation&quot;: 15514,
+                &quot;user_id&quot;: 820127,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/81f8fffeec4f2ba3e75aebe941e4e5dd?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;rossum&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/820127/rossum&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 11683,
+                &quot;reputation&quot;: 1447238,
+                &quot;user_id&quot;: 22656,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;accept_rate&quot;: 86,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/6d8ebb117e8d83d74ea95fbdd0f87e13?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;Jon Skeet&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/22656/jon-skeet&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 199923,
+                &quot;reputation&quot;: 107304,
+                &quot;user_id&quot;: 445517,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;accept_rate&quot;: 43,
+                &quot;profile_image&quot;: &quot;https://www.gravatar.com/avatar/57e2ba76e6290c4e9e19821a068bc8c1?s=256&amp;d=identicon&amp;r=PG&quot;,
+                &quot;display_name&quot;: &quot;CodesInChaos&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/445517/codesinchaos&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        },
+        {
+            &quot;user&quot;: {
+                &quot;account_id&quot;: 288696,
+                &quot;reputation&quot;: 91531,
+                &quot;user_id&quot;: 589259,
+                &quot;user_type&quot;: &quot;registered&quot;,
+                &quot;accept_rate&quot;: 82,
+                &quot;profile_image&quot;: &quot;https://i.stack.imgur.com/vJbKg.jpg?s=256&amp;g=1&quot;,
+                &quot;display_name&quot;: &quot;Maarten Bodewes&quot;,
+                &quot;link&quot;: &quot;https://stackoverflow.com/users/589259/maarten-bodewes&quot;
+            },
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 263,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/263/cryptography&quot;,
+            &quot;name&quot;: &quot;cryptography&quot;
+        }
+    ],
+    &quot;has_more&quot;: true,
+    &quot;quota_max&quot;: 300,
+    &quot;quota_remaining&quot;: 287
+}
+
+  Given user call the get endpoint to get badges &quot;263&quot; for 'recipients' # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
+  Then user receive a 200 HTTP response                                 # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
+
+@BadgesAPI @UnhappyPath
+Scenario Outline: To verify get badges endpoint returns error response for incorrect badge id # src/test/resources/cucumber.features/GetRecipients.feature:20
+07-02-2024 12:11:17.875 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [a81cfeeb-7d52-49d2-94ed-749a8b778eb0] ##
+Request method:	GET
+Request path:	https://api.stackexchange.com/2.3/badges/101rf/recipients?site=stackoverflow
+Request params:	&lt;none&gt;
+Query params:	site=stackoverflow
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Body:			&lt;none&gt;
+07-02-2024 12:11:17.877 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [a81cfeeb-7d52-49d2-94ed-749a8b778eb0] ##
+HTTP/1.1 400 Bad Request
+cache-control: private
+content-length: 97
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+strict-transport-security: max-age=15552000
+x-error-status: 404
+x-error-name: no_method
+x-error-message: no method found with this name
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST
+access-control-allow-credentials: false
+x-content-type-options: nosniff
+x-request-guid: edddcc0b-fa05-4121-a606-94b34c72d3bb
+set-cookie: prov=c26cdee9-3c78-4e9a-8254-b416ae4b4258; expires=Fri, 07 Feb 2025 06:41:17 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
+date: Wed, 07 Feb 2024 06:41:17 GMT
+prov=c26cdee9-3c78-4e9a-8254-b416ae4b4258;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+    &quot;error_id&quot;: 404,
+    &quot;error_message&quot;: &quot;no method found with this name&quot;,
+    &quot;error_name&quot;: &quot;no_method&quot;
+}
+
+  Given user call the get endpoint to get badges &quot;101rf&quot; for 'recipients'                     # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
+  Then user receive a 400 HTTP response                                                       # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
+
+@BadgesAPI @UnhappyPath
+Scenario Outline: To verify get badges endpoint returns error response for incorrect badge id # src/test/resources/cucumber.features/GetRecipients.feature:21
+07-02-2024 12:11:19.462 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [d7ebe155-fffa-49b1-81e0-ae439738b53a] ##
+Request method:	GET
+Request path:	https://api.stackexchange.com/2.3/badges%2F%2Frecipients?site=stackoverflow
+Request params:	&lt;none&gt;
+Query params:	site=stackoverflow
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Body:			&lt;none&gt;
+07-02-2024 12:11:19.466 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [d7ebe155-fffa-49b1-81e0-ae439738b53a] ##
+HTTP/1.1 400 Bad Request
+cache-control: private
+content-length: 97
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+strict-transport-security: max-age=15552000
+x-error-status: 404
+x-error-name: no_method
+x-error-message: no method found with this name
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST
+access-control-allow-credentials: false
+x-content-type-options: nosniff
+x-request-guid: 7bd15758-dead-4d7f-8c2b-f0c670b492f6
+set-cookie: prov=b024caec-9571-48d0-bda1-362ef4ac50df; expires=Fri, 07 Feb 2025 06:41:19 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
+date: Wed, 07 Feb 2024 06:41:18 GMT
+prov=b024caec-9571-48d0-bda1-362ef4ac50df;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+    &quot;error_id&quot;: 404,
+    &quot;error_message&quot;: &quot;no method found with this name&quot;,
+    &quot;error_name&quot;: &quot;no_method&quot;
+}
+
+  Given user call the get endpoint to get badges &quot;&quot; for 'recipients'                          # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
+  Then user receive a 400 HTTP response                                                       # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
+
+@BadgesAPI @UnhappyPath
+Scenario Outline: To verify get badges endpoint returns error response for incorrect badge id # src/test/resources/cucumber.features/GetRecipients.feature:32
+07-02-2024 12:11:21.105 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [153d153c-7a52-4739-828c-2f98cdb1448a] ##
+Request method:	GET
+Request path:	https://api.stackexchange.com/2.3/badges/109%20tr/recipients?site=stackoverflow
+Request params:	&lt;none&gt;
+Query params:	site=stackoverflow
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Body:			&lt;none&gt;
+07-02-2024 12:11:21.109 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [153d153c-7a52-4739-828c-2f98cdb1448a] ##
+HTTP/1.1 400 Bad Request
+cache-control: private
+content-length: 97
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+strict-transport-security: max-age=15552000
+x-error-status: 404
+x-error-name: no_method
+x-error-message: no method found with this name
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST
+access-control-allow-credentials: false
+x-content-type-options: nosniff
+x-request-guid: 8478971a-ad9b-4a94-9910-e6473876c1b4
+set-cookie: prov=f254cdc4-e02b-470b-8875-6a4cc40e9d38; expires=Fri, 07 Feb 2025 06:41:21 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
+date: Wed, 07 Feb 2024 06:41:20 GMT
+prov=f254cdc4-e02b-470b-8875-6a4cc40e9d38;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+    &quot;error_id&quot;: 404,
+    &quot;error_message&quot;: &quot;no method found with this name&quot;,
+    &quot;error_name&quot;: &quot;no_method&quot;
+}
+
+  Given user call the get endpoint to get badges &quot;109 tr&quot; for 'recipients'                    # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
+  Then user receive a 400 HTTP response                                                       # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
+  And verify response parameters are available                                                # com.example.stackExchange.stepdefs.GeneralSteps.verifyresponseparametersavailable(java.util.List&lt;java.util.List&lt;java.lang.String&gt;&gt;)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.3</a> at 7 Feb 2024, 12:11:21</p>
+</div>
+</div>
+</body>
+</html>

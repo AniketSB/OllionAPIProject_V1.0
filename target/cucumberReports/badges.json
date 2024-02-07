@@ -1,0 +1,1025 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-02-07T06:40:49.577Z",
+        "line": 10,
+        "name": "Get the badges identified by ids.",
+        "description": "",
+        "id": "returns-result-for-stackexchange-badges-api;get-the-badges-identified-by-ids.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5711934000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user call the get endpoint to get badges \"ALL\" for \u0027id\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ALL\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\u0027id\u0027",
+                  "offset": 51
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 186383000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user receive a 200 HTTP response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BadgesAPI"
+          },
+          {
+            "name": "@HappyPath"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-02-07T06:40:55.724Z",
+        "line": 11,
+        "name": "Get the badges identified by ids.",
+        "description": "",
+        "id": "returns-result-for-stackexchange-badges-api;get-the-badges-identified-by-ids.;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1622193000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user call the get endpoint to get badges \"262\" for \u0027id\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"262\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\u0027id\u0027",
+                  "offset": 51
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 307000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user receive a 200 HTTP response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BadgesAPI"
+          },
+          {
+            "name": "@HappyPath"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-02-07T06:40:57.356Z",
+        "line": 12,
+        "name": "Get the badges identified by ids.",
+        "description": "",
+        "id": "returns-result-for-stackexchange-badges-api;get-the-badges-identified-by-ids.;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1669368000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user call the get endpoint to get badges \"\" for \u0027id\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\u0027id\u0027",
+                  "offset": 48
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1511000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user receive a 200 HTTP response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BadgesAPI"
+          },
+          {
+            "name": "@HappyPath"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-02-07T06:40:59.051Z",
+        "line": 20,
+        "name": "To verify get badges endpoint returns error response for incorrect badge id",
+        "description": "",
+        "id": "returns-result-for-stackexchange-badges-api;to-verify-get-badges-endpoint-returns-error-response-for-incorrect-badge-id;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1675751000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user call the get endpoint to get badges \"605tw\" for \u0027id\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"605tw\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\u0027id\u0027",
+                  "offset": 53
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1682000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user receive a 400 HTTP response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 15
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BadgesAPI"
+          },
+          {
+            "name": "@UnhappyPath"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-02-07T06:41:00.744Z",
+        "line": 31,
+        "name": "To verify get badges endpoint returns correct error message for incorrect badge id",
+        "description": "",
+        "id": "returns-result-for-stackexchange-badges-api;to-verify-get-badges-endpoint-returns-correct-error-message-for-incorrect-badge-id;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1818650000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user call the get endpoint to get badges \"635tw\" for \u0027id\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"635tw\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\u0027id\u0027",
+                  "offset": 53
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 370000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user receive a 400 HTTP response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 15
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 732848000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "verify response parameters are available",
+            "match": {
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.verifyresponseparametersavailable(java.util.List\u003cjava.util.List\u003cjava.lang.String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "error_message",
+                  "error_id"
+                ]
+              },
+              {
+                "cells": [
+                  "no method found with this name",
+                  "404"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BadgesAPI"
+          },
+          {
+            "name": "@UnhappyPath"
+          }
+        ]
+      }
+    ],
+    "name": "Returns result for stackExchange badges API",
+    "description": "",
+    "id": "returns-result-for-stackexchange-badges-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/cucumber.features/GetBadgesIds.feature",
+    "tags": [
+      {
+        "name": "@BadgesAPI",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-02-07T06:41:03.315Z",
+        "line": 10,
+        "name": "Get the badges identified by tags.",
+        "description": "",
+        "id": "returns-result-for-stackexchange-badges-api-for-tags;get-the-badges-identified-by-tags.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1849276000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user call the get endpoint to get badges \"ALL\" for \u0027tags\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ALL\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\u0027tags\u0027",
+                  "offset": 51
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 399000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user receive a 200 HTTP response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BadgesAPI"
+          },
+          {
+            "name": "@HappyPath"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-02-07T06:41:05.186Z",
+        "line": 18,
+        "name": "To verify get badges endpoint returns error response for incorrect tags",
+        "description": "",
+        "id": "returns-result-for-stackexchange-badges-api-for-tags;to-verify-get-badges-endpoint-returns-error-response-for-incorrect-tags;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1712846000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user call the get endpoint to get badges \"111ee\" for \u0027tags\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"111ee\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\u0027tags\u0027",
+                  "offset": 53
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 583000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user receive a 400 HTTP response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 15
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BadgesAPI"
+          },
+          {
+            "name": "@UnhappyPath"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-02-07T06:41:06.909Z",
+        "line": 19,
+        "name": "To verify get badges endpoint returns error response for incorrect tags",
+        "description": "",
+        "id": "returns-result-for-stackexchange-badges-api-for-tags;to-verify-get-badges-endpoint-returns-error-response-for-incorrect-tags;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1725428000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user call the get endpoint to get badges \"269\" for \u0027tags\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"269\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\u0027tags\u0027",
+                  "offset": 51
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 488000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user receive a 400 HTTP response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 15
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BadgesAPI"
+          },
+          {
+            "name": "@UnhappyPath"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-02-07T06:41:08.647Z",
+        "line": 20,
+        "name": "To verify get badges endpoint returns error response for incorrect tags",
+        "description": "",
+        "id": "returns-result-for-stackexchange-badges-api-for-tags;to-verify-get-badges-endpoint-returns-error-response-for-incorrect-tags;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1836831000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user call the get endpoint to get badges \"\" for \u0027tags\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\u0027tags\u0027",
+                  "offset": 48
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1335000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user receive a 400 HTTP response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 15
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BadgesAPI"
+          },
+          {
+            "name": "@UnhappyPath"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-02-07T06:41:10.503Z",
+        "line": 31,
+        "name": "To verify get badges endpoint returns correct error message for incorrect tags",
+        "description": "",
+        "id": "returns-result-for-stackexchange-badges-api-for-tags;to-verify-get-badges-endpoint-returns-correct-error-message-for-incorrect-tags;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1853501000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user call the get endpoint to get badges \"555yt\" for \u0027tags\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"555yt\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\u0027tags\u0027",
+                  "offset": 53
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4386000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user receive a 400 HTTP response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 15
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 72485000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "verify response parameters are available",
+            "match": {
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.verifyresponseparametersavailable(java.util.List\u003cjava.util.List\u003cjava.lang.String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "error_message",
+                  "error_id"
+                ]
+              },
+              {
+                "cells": [
+                  "no method found with this name",
+                  "404"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BadgesAPI"
+          },
+          {
+            "name": "@UnhappyPath"
+          }
+        ]
+      }
+    ],
+    "name": "Returns result for stackExchange badges API for Tags",
+    "description": "",
+    "id": "returns-result-for-stackexchange-badges-api-for-tags",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/cucumber.features/GetBadgesTags.feature",
+    "tags": [
+      {
+        "name": "@BadgesAPI",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-02-07T06:41:12.454Z",
+        "line": 10,
+        "name": "Get badges recently awarded on the site.",
+        "description": "",
+        "id": "returns-result-for-stackexchange-badges-api;get-badges-recently-awarded-on-the-site.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1839976000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user call the get endpoint to get badges \"ALL\" for \u0027recipients\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ALL\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\u0027recipients\u0027",
+                  "offset": 51
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1527000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user receive a 200 HTTP response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BadgesAPI"
+          },
+          {
+            "name": "@HappyPath"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-02-07T06:41:14.310Z",
+        "line": 11,
+        "name": "Get badges recently awarded on the site.",
+        "description": "",
+        "id": "returns-result-for-stackexchange-badges-api;get-badges-recently-awarded-on-the-site.;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1814165000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user call the get endpoint to get badges \"263\" for \u0027recipients\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"263\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\u0027recipients\u0027",
+                  "offset": 51
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 178000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user receive a 200 HTTP response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BadgesAPI"
+          },
+          {
+            "name": "@HappyPath"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-02-07T06:41:16.128Z",
+        "line": 20,
+        "name": "To verify get badges endpoint returns error response for incorrect badge id",
+        "description": "",
+        "id": "returns-result-for-stackexchange-badges-api;to-verify-get-badges-endpoint-returns-error-response-for-incorrect-badge-id;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1749758000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user call the get endpoint to get badges \"101rf\" for \u0027recipients\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"101rf\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\u0027recipients\u0027",
+                  "offset": 53
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 607000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user receive a 400 HTTP response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 15
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BadgesAPI"
+          },
+          {
+            "name": "@UnhappyPath"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-02-07T06:41:17.891Z",
+        "line": 21,
+        "name": "To verify get badges endpoint returns error response for incorrect badge id",
+        "description": "",
+        "id": "returns-result-for-stackexchange-badges-api;to-verify-get-badges-endpoint-returns-error-response-for-incorrect-badge-id;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1573803000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user call the get endpoint to get badges \"\" for \u0027recipients\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\u0027recipients\u0027",
+                  "offset": 48
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1184000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user receive a 400 HTTP response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 15
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BadgesAPI"
+          },
+          {
+            "name": "@UnhappyPath"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-02-07T06:41:19.482Z",
+        "line": 32,
+        "name": "To verify get badges endpoint returns error response for incorrect badge id",
+        "description": "",
+        "id": "returns-result-for-stackexchange-badges-api;to-verify-get-badges-endpoint-returns-error-response-for-incorrect-badge-id;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1615699000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user call the get endpoint to get badges \"109 tr\" for \u0027recipients\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"109 tr\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\u0027recipients\u0027",
+                  "offset": 54
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 429000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user receive a 400 HTTP response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 15
+                }
+              ],
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 47546000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "verify response parameters are available",
+            "match": {
+              "location": "com.example.stackExchange.stepdefs.GeneralSteps.verifyresponseparametersavailable(java.util.List\u003cjava.util.List\u003cjava.lang.String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "error_message",
+                  "error_id"
+                ]
+              },
+              {
+                "cells": [
+                  "no method found with this name",
+                  "404"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BadgesAPI"
+          },
+          {
+            "name": "@UnhappyPath"
+          }
+        ]
+      }
+    ],
+    "name": "Returns result for stackExchange badges API",
+    "description": "",
+    "id": "returns-result-for-stackexchange-badges-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/cucumber.features/GetRecipients.feature",
+    "tags": [
+      {
+        "name": "@BadgesAPI",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

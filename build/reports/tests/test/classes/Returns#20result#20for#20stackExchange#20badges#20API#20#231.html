@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Returns result for stackExchange badges API #1</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Returns result for stackExchange badges API #1</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Returns result for stackExchange badges API #1</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">14.057s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Get the badges identified by ids. #1</td>
+<td class="success">6.470s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Get the badges identified by ids. #2</td>
+<td class="success">1.637s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Get the badges identified by ids. #3</td>
+<td class="success">1.681s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">To verify get badges endpoint returns correct error message for incorrect badge id</td>
+<td class="success">2.564s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">To verify get badges endpoint returns error response for incorrect badge id</td>
+<td class="success">1.705s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+@BadgesAPI @HappyPath
+Scenario Outline: Get the badges identified by ids.             # src/test/resources/cucumber.features/GetBadgesIds.feature:10
+07-02-2024 12:10:55.313 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [bbc81c20-6599-4f7d-8074-afd4be3557da] ##
+Request method:	GET
+Request path:	https://api.stackexchange.com/2.3/badges/?order=desc&amp;sort=rank&amp;site=stackoverflow
+Request params:	&lt;none&gt;
+Query params:	order=desc
+				sort=rank
+				site=stackoverflow
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Body:			&lt;none&gt;
+07-02-2024 12:10:55.465 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [bbc81c20-6599-4f7d-8074-afd4be3557da] ##
+HTTP/1.1 200 OK
+cache-control: private
+content-length: 717
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+strict-transport-security: max-age=15552000
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST
+access-control-allow-credentials: false
+x-content-type-options: nosniff
+x-request-guid: 772d030a-187d-4d9c-bf57-35798da73fc8
+set-cookie: prov=018e5c34-39b2-41ad-bea6-f7ae6704ddf5; expires=Fri, 07 Feb 2025 06:40:55 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
+date: Wed, 07 Feb 2024 06:40:54 GMT
+prov=018e5c34-39b2-41ad-bea6-f7ae6704ddf5;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:40{
+    &quot;items&quot;: [
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 6440,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/6440/n-gram&quot;,
+            &quot;name&quot;: &quot;n-gram&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 9296,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/9296/ngroute&quot;,
+            &quot;name&quot;: &quot;ngroute&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 8,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 6944,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/6944/ngrx&quot;,
+            &quot;name&quot;: &quot;ngrx&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 9542,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/9542/ngrx-effects&quot;,
+            &quot;name&quot;: &quot;ngrx-effects&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 9787,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/9787/ngrx-store&quot;,
+            &quot;name&quot;: &quot;ngrx-store&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 8454,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/8454/ngx-bootstrap&quot;,
+            &quot;name&quot;: &quot;ngx-bootstrap&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 11752,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/11752/ngxs&quot;,
+            &quot;name&quot;: &quot;ngxs&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 70,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 332,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/332/nhibernate&quot;,
+            &quot;name&quot;: &quot;nhibernate&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 7,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 1094,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/1094/nhibernate-mapping&quot;,
+            &quot;name&quot;: &quot;nhibernate-mapping&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 9207,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/9207/nightwatch-js&quot;,
+            &quot;name&quot;: &quot;nightwatch.js&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 2710,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/2710/nimbus&quot;,
+            &quot;name&quot;: &quot;nimbus&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 7,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 9001,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/9001/nim-lang&quot;,
+            &quot;name&quot;: &quot;nim-lang&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 12,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 994,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/994/ninject&quot;,
+            &quot;name&quot;: &quot;ninject&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 1465,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/1465/ninject-2&quot;,
+            &quot;name&quot;: &quot;ninject-2&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 2991,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/2991/ninject-extensions&quot;,
+            &quot;name&quot;: &quot;ninject-extensions&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 6,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 1807,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/1807/nio&quot;,
+            &quot;name&quot;: &quot;nio&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 2,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 9212,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/9212/nix&quot;,
+            &quot;name&quot;: &quot;nix&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 9693,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/9693/nixos&quot;,
+            &quot;name&quot;: &quot;nixos&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 7576,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/7576/nlme&quot;,
+            &quot;name&quot;: &quot;nlme&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 4,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 1389,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/1389/nlog&quot;,
+            &quot;name&quot;: &quot;nlog&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 38,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 797,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/797/nlp&quot;,
+            &quot;name&quot;: &quot;nlp&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 2,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 8565,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/8565/nls&quot;,
+            &quot;name&quot;: &quot;nls&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 8,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 2667,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/2667/nltk&quot;,
+            &quot;name&quot;: &quot;nltk&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 6459,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/6459/nmap&quot;,
+            &quot;name&quot;: &quot;nmap&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 2,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 3989,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/3989/nodatime&quot;,
+            &quot;name&quot;: &quot;nodatime&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1276,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 899,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/899/node-js&quot;,
+            &quot;name&quot;: &quot;node.js&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 6505,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/6505/nodemcu&quot;,
+            &quot;name&quot;: &quot;nodemcu&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 2,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 7955,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/7955/node-modules&quot;,
+            &quot;name&quot;: &quot;node-modules&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 6978,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/6978/node-mongodb-native&quot;,
+            &quot;name&quot;: &quot;node-mongodb-native&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 10894,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/10894/node-oracledb&quot;,
+            &quot;name&quot;: &quot;node-oracledb&quot;
+        }
+    ],
+    &quot;has_more&quot;: true,
+    &quot;quota_max&quot;: 300,
+    &quot;quota_remaining&quot;: 298
+}
+
+  Given user call the get endpoint to get badges &quot;ALL&quot; for 'id' # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
+  Then user receive a 200 HTTP response                         # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
+
+@BadgesAPI @HappyPath
+Scenario Outline: Get the badges identified by ids.             # src/test/resources/cucumber.features/GetBadgesIds.feature:11
+07-02-2024 12:10:57.346 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [1e79b73f-532e-44e0-a42b-b9ef0e86dfd2] ##
+Request method:	GET
+Request path:	https://api.stackexchange.com/2.3/badges/262?order=desc&amp;sort=rank&amp;site=stackoverflow
+Request params:	&lt;none&gt;
+Query params:	order=desc
+				sort=rank
+				site=stackoverflow
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Body:			&lt;none&gt;
+07-02-2024 12:10:57.349 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [1e79b73f-532e-44e0-a42b-b9ef0e86dfd2] ##
+HTTP/1.1 200 OK
+cache-control: private
+content-length: 184
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+strict-transport-security: max-age=15552000
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST
+access-control-allow-credentials: false
+x-content-type-options: nosniff
+x-request-guid: a21d9e3d-474d-4fe8-af96-58a068abe7a9
+set-cookie: prov=4c85647e-7a5e-46ec-8656-f9acb4d319b6; expires=Fri, 07 Feb 2025 06:40:57 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
+date: Wed, 07 Feb 2024 06:40:56 GMT
+prov=4c85647e-7a5e-46ec-8656-f9acb4d319b6;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:40{
+    &quot;items&quot;: [
+        {
+            &quot;badge_type&quot;: &quot;named&quot;,
+            &quot;award_count&quot;: 12974,
+            &quot;rank&quot;: &quot;gold&quot;,
+            &quot;badge_id&quot;: 262,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/262/publicist&quot;,
+            &quot;name&quot;: &quot;Publicist&quot;
+        }
+    ],
+    &quot;has_more&quot;: false,
+    &quot;quota_max&quot;: 300,
+    &quot;quota_remaining&quot;: 297
+}
+
+  Given user call the get endpoint to get badges &quot;262&quot; for 'id' # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
+  Then user receive a 200 HTTP response                         # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
+
+@BadgesAPI @HappyPath
+Scenario Outline: Get the badges identified by ids.          # src/test/resources/cucumber.features/GetBadgesIds.feature:12
+07-02-2024 12:10:58.994 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [18634eee-5da3-46fc-a956-0180384f6bdc] ##
+Request method:	GET
+Request path:	https://api.stackexchange.com/2.3/badges/?order=desc&amp;sort=rank&amp;site=stackoverflow
+Request params:	&lt;none&gt;
+Query params:	order=desc
+				sort=rank
+				site=stackoverflow
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Body:			&lt;none&gt;
+07-02-2024 12:10:59.013 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [18634eee-5da3-46fc-a956-0180384f6bdc] ##
+HTTP/1.1 200 OK
+cache-control: private
+content-length: 717
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+strict-transport-security: max-age=15552000
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST
+access-control-allow-credentials: false
+x-content-type-options: nosniff
+x-request-guid: d317ff90-5af9-4dcd-b6f9-be8984445453
+set-cookie: prov=4ea70b88-31db-414b-8ef6-1d13be6f9672; expires=Fri, 07 Feb 2025 06:40:58 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
+date: Wed, 07 Feb 2024 06:40:58 GMT
+prov=4ea70b88-31db-414b-8ef6-1d13be6f9672;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:40{
+    &quot;items&quot;: [
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 6440,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/6440/n-gram&quot;,
+            &quot;name&quot;: &quot;n-gram&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 9296,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/9296/ngroute&quot;,
+            &quot;name&quot;: &quot;ngroute&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 8,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 6944,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/6944/ngrx&quot;,
+            &quot;name&quot;: &quot;ngrx&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 9542,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/9542/ngrx-effects&quot;,
+            &quot;name&quot;: &quot;ngrx-effects&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 9787,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/9787/ngrx-store&quot;,
+            &quot;name&quot;: &quot;ngrx-store&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 8454,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/8454/ngx-bootstrap&quot;,
+            &quot;name&quot;: &quot;ngx-bootstrap&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 11752,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/11752/ngxs&quot;,
+            &quot;name&quot;: &quot;ngxs&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 70,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 332,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/332/nhibernate&quot;,
+            &quot;name&quot;: &quot;nhibernate&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 7,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 1094,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/1094/nhibernate-mapping&quot;,
+            &quot;name&quot;: &quot;nhibernate-mapping&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 9207,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/9207/nightwatch-js&quot;,
+            &quot;name&quot;: &quot;nightwatch.js&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 2710,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/2710/nimbus&quot;,
+            &quot;name&quot;: &quot;nimbus&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 7,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 9001,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/9001/nim-lang&quot;,
+            &quot;name&quot;: &quot;nim-lang&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 12,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 994,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/994/ninject&quot;,
+            &quot;name&quot;: &quot;ninject&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 1465,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/1465/ninject-2&quot;,
+            &quot;name&quot;: &quot;ninject-2&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 2991,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/2991/ninject-extensions&quot;,
+            &quot;name&quot;: &quot;ninject-extensions&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 6,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 1807,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/1807/nio&quot;,
+            &quot;name&quot;: &quot;nio&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 2,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 9212,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/9212/nix&quot;,
+            &quot;name&quot;: &quot;nix&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 9693,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/9693/nixos&quot;,
+            &quot;name&quot;: &quot;nixos&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 7576,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/7576/nlme&quot;,
+            &quot;name&quot;: &quot;nlme&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 4,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 1389,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/1389/nlog&quot;,
+            &quot;name&quot;: &quot;nlog&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 38,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 797,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/797/nlp&quot;,
+            &quot;name&quot;: &quot;nlp&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 2,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 8565,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/8565/nls&quot;,
+            &quot;name&quot;: &quot;nls&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 8,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 2667,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/2667/nltk&quot;,
+            &quot;name&quot;: &quot;nltk&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 6459,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/6459/nmap&quot;,
+            &quot;name&quot;: &quot;nmap&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 2,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 3989,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/3989/nodatime&quot;,
+            &quot;name&quot;: &quot;nodatime&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1276,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 899,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/899/node-js&quot;,
+            &quot;name&quot;: &quot;node.js&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 6505,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/6505/nodemcu&quot;,
+            &quot;name&quot;: &quot;nodemcu&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 2,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 7955,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/7955/node-modules&quot;,
+            &quot;name&quot;: &quot;node-modules&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 6978,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/6978/node-mongodb-native&quot;,
+            &quot;name&quot;: &quot;node-mongodb-native&quot;
+        },
+        {
+            &quot;badge_type&quot;: &quot;tag_based&quot;,
+            &quot;award_count&quot;: 1,
+            &quot;rank&quot;: &quot;bronze&quot;,
+            &quot;badge_id&quot;: 10894,
+            &quot;link&quot;: &quot;https://stackoverflow.com/badges/10894/node-oracledb&quot;,
+            &quot;name&quot;: &quot;node-oracledb&quot;
+        }
+    ],
+    &quot;has_more&quot;: true,
+    &quot;quota_max&quot;: 300,
+    &quot;quota_remaining&quot;: 296
+}
+
+  Given user call the get endpoint to get badges &quot;&quot; for 'id' # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
+  Then user receive a 200 HTTP response                      # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
+
+@BadgesAPI @UnhappyPath
+Scenario Outline: To verify get badges endpoint returns error response for incorrect badge id # src/test/resources/cucumber.features/GetBadgesIds.feature:20
+07-02-2024 12:11:00.729 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [80018ed8-94ca-497b-95ee-4e6632da46c1] ##
+Request method:	GET
+Request path:	https://api.stackexchange.com/2.3/badges/605tw?order=desc&amp;sort=rank&amp;site=stackoverflow
+Request params:	&lt;none&gt;
+Query params:	order=desc
+				sort=rank
+				site=stackoverflow
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Body:			&lt;none&gt;
+07-02-2024 12:11:00.730 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [80018ed8-94ca-497b-95ee-4e6632da46c1] ##
+HTTP/1.1 400 Bad Request
+cache-control: private
+content-length: 97
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+strict-transport-security: max-age=15552000
+x-error-status: 404
+x-error-name: no_method
+x-error-message: no method found with this name
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST
+access-control-allow-credentials: false
+x-content-type-options: nosniff
+x-request-guid: b1f3a1b8-2ac6-49a9-87be-ac61d9478a4b
+set-cookie: prov=ddf635fb-e7ec-4152-8f72-94995d557ae3; expires=Fri, 07 Feb 2025 06:41:00 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
+date: Wed, 07 Feb 2024 06:41:00 GMT
+prov=ddf635fb-e7ec-4152-8f72-94995d557ae3;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+    &quot;error_id&quot;: 404,
+    &quot;error_message&quot;: &quot;no method found with this name&quot;,
+    &quot;error_name&quot;: &quot;no_method&quot;
+}
+
+  Given user call the get endpoint to get badges &quot;605tw&quot; for 'id'                             # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
+  Then user receive a 400 HTTP response                                                       # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
+
+@BadgesAPI @UnhappyPath
+Scenario Outline: To verify get badges endpoint returns correct error message for incorrect badge id # src/test/resources/cucumber.features/GetBadgesIds.feature:31
+07-02-2024 12:11:02.557 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [7a8c4ad6-ec1e-4d68-8aef-81fb6a23a285] ##
+Request method:	GET
+Request path:	https://api.stackexchange.com/2.3/badges/635tw?order=desc&amp;sort=rank&amp;site=stackoverflow
+Request params:	&lt;none&gt;
+Query params:	order=desc
+				sort=rank
+				site=stackoverflow
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Body:			&lt;none&gt;
+07-02-2024 12:11:02.561 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [7a8c4ad6-ec1e-4d68-8aef-81fb6a23a285] ##
+HTTP/1.1 400 Bad Request
+cache-control: private
+content-length: 97
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+strict-transport-security: max-age=15552000
+x-error-status: 404
+x-error-name: no_method
+x-error-message: no method found with this name
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST
+access-control-allow-credentials: false
+x-content-type-options: nosniff
+x-request-guid: 7d965e8e-b02f-466e-960c-79ac7ad32cfe
+set-cookie: prov=5e932b26-36f9-4918-a65b-e3026892115d; expires=Fri, 07 Feb 2025 06:41:02 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
+date: Wed, 07 Feb 2024 06:41:01 GMT
+prov=5e932b26-36f9-4918-a65b-e3026892115d;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+    &quot;error_id&quot;: 404,
+    &quot;error_message&quot;: &quot;no method found with this name&quot;,
+    &quot;error_name&quot;: &quot;no_method&quot;
+}
+
+  Given user call the get endpoint to get badges &quot;635tw&quot; for 'id'                                    # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
+  Then user receive a 400 HTTP response                                                              # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
+  And verify response parameters are available                                                       # com.example.stackExchange.stepdefs.GeneralSteps.verifyresponseparametersavailable(java.util.List&lt;java.util.List&lt;java.lang.String&gt;&gt;)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.3</a> at 7 Feb 2024, 12:11:21</p>
+</div>
+</div>
+</body>
+</html>

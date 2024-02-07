@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Returns result for stackExchange badges API #1" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-02-07T06:40:49" hostname="ANIKETs-MacBook-Pro.local" time="14.059">
+  <properties/>
+  <testcase name="Get the badges identified by ids. #1" classname="Returns result for stackExchange badges API #1" time="6.47"/>
+  <testcase name="Get the badges identified by ids. #2" classname="Returns result for stackExchange badges API #1" time="1.637"/>
+  <testcase name="Get the badges identified by ids. #3" classname="Returns result for stackExchange badges API #1" time="1.681"/>
+  <testcase name="To verify get badges endpoint returns error response for incorrect badge id" classname="Returns result for stackExchange badges API #1" time="1.705"/>
+  <testcase name="To verify get badges endpoint returns correct error message for incorrect badge id" classname="Returns result for stackExchange badges API #1" time="2.564"/>
+  <system-out><![CDATA[
+@BadgesAPI @HappyPath
+Scenario Outline: Get the badges identified by ids.             # src/test/resources/cucumber.features/GetBadgesIds.feature:10
+07-02-2024 12:10:55.313 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [bbc81c20-6599-4f7d-8074-afd4be3557da] ##
+Request method:	GET
+Request path:	https://api.stackexchange.com/2.3/badges/?order=desc&sort=rank&site=stackoverflow
+Request params:	<none>
+Query params:	order=desc
+				sort=rank
+				site=stackoverflow
+Path params:	<none>
+Headers:		Accept=*/*
+Body:			<none>
+07-02-2024 12:10:55.465 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [bbc81c20-6599-4f7d-8074-afd4be3557da] ##
+HTTP/1.1 200 OK
+cache-control: private
+content-length: 717
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+strict-transport-security: max-age=15552000
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST
+access-control-allow-credentials: false
+x-content-type-options: nosniff
+x-request-guid: 772d030a-187d-4d9c-bf57-35798da73fc8
+set-cookie: prov=018e5c34-39b2-41ad-bea6-f7ae6704ddf5; expires=Fri, 07 Feb 2025 06:40:55 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
+date: Wed, 07 Feb 2024 06:40:54 GMT
+prov=018e5c34-39b2-41ad-bea6-f7ae6704ddf5;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:40{
+    "items": [
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 6440,
+            "link": "https://stackoverflow.com/badges/6440/n-gram",
+            "name": "n-gram"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 9296,
+            "link": "https://stackoverflow.com/badges/9296/ngroute",
+            "name": "ngroute"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 8,
+            "rank": "bronze",
+            "badge_id": 6944,
+            "link": "https://stackoverflow.com/badges/6944/ngrx",
+            "name": "ngrx"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 9542,
+            "link": "https://stackoverflow.com/badges/9542/ngrx-effects",
+            "name": "ngrx-effects"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 9787,
+            "link": "https://stackoverflow.com/badges/9787/ngrx-store",
+            "name": "ngrx-store"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 8454,
+            "link": "https://stackoverflow.com/badges/8454/ngx-bootstrap",
+            "name": "ngx-bootstrap"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 11752,
+            "link": "https://stackoverflow.com/badges/11752/ngxs",
+            "name": "ngxs"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 70,
+            "rank": "bronze",
+            "badge_id": 332,
+            "link": "https://stackoverflow.com/badges/332/nhibernate",
+            "name": "nhibernate"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 7,
+            "rank": "bronze",
+            "badge_id": 1094,
+            "link": "https://stackoverflow.com/badges/1094/nhibernate-mapping",
+            "name": "nhibernate-mapping"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 9207,
+            "link": "https://stackoverflow.com/badges/9207/nightwatch-js",
+            "name": "nightwatch.js"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 2710,
+            "link": "https://stackoverflow.com/badges/2710/nimbus",
+            "name": "nimbus"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 7,
+            "rank": "bronze",
+            "badge_id": 9001,
+            "link": "https://stackoverflow.com/badges/9001/nim-lang",
+            "name": "nim-lang"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 12,
+            "rank": "bronze",
+            "badge_id": 994,
+            "link": "https://stackoverflow.com/badges/994/ninject",
+            "name": "ninject"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 1465,
+            "link": "https://stackoverflow.com/badges/1465/ninject-2",
+            "name": "ninject-2"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 2991,
+            "link": "https://stackoverflow.com/badges/2991/ninject-extensions",
+            "name": "ninject-extensions"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 6,
+            "rank": "bronze",
+            "badge_id": 1807,
+            "link": "https://stackoverflow.com/badges/1807/nio",
+            "name": "nio"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 2,
+            "rank": "bronze",
+            "badge_id": 9212,
+            "link": "https://stackoverflow.com/badges/9212/nix",
+            "name": "nix"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 9693,
+            "link": "https://stackoverflow.com/badges/9693/nixos",
+            "name": "nixos"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 7576,
+            "link": "https://stackoverflow.com/badges/7576/nlme",
+            "name": "nlme"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 4,
+            "rank": "bronze",
+            "badge_id": 1389,
+            "link": "https://stackoverflow.com/badges/1389/nlog",
+            "name": "nlog"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 38,
+            "rank": "bronze",
+            "badge_id": 797,
+            "link": "https://stackoverflow.com/badges/797/nlp",
+            "name": "nlp"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 2,
+            "rank": "bronze",
+            "badge_id": 8565,
+            "link": "https://stackoverflow.com/badges/8565/nls",
+            "name": "nls"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 8,
+            "rank": "bronze",
+            "badge_id": 2667,
+            "link": "https://stackoverflow.com/badges/2667/nltk",
+            "name": "nltk"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 6459,
+            "link": "https://stackoverflow.com/badges/6459/nmap",
+            "name": "nmap"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 2,
+            "rank": "bronze",
+            "badge_id": 3989,
+            "link": "https://stackoverflow.com/badges/3989/nodatime",
+            "name": "nodatime"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1276,
+            "rank": "bronze",
+            "badge_id": 899,
+            "link": "https://stackoverflow.com/badges/899/node-js",
+            "name": "node.js"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 6505,
+            "link": "https://stackoverflow.com/badges/6505/nodemcu",
+            "name": "nodemcu"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 2,
+            "rank": "bronze",
+            "badge_id": 7955,
+            "link": "https://stackoverflow.com/badges/7955/node-modules",
+            "name": "node-modules"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 6978,
+            "link": "https://stackoverflow.com/badges/6978/node-mongodb-native",
+            "name": "node-mongodb-native"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 10894,
+            "link": "https://stackoverflow.com/badges/10894/node-oracledb",
+            "name": "node-oracledb"
+        }
+    ],
+    "has_more": true,
+    "quota_max": 300,
+    "quota_remaining": 298
+}
+
+  Given user call the get endpoint to get badges "ALL" for 'id' # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
+  Then user receive a 200 HTTP response                         # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
+
+@BadgesAPI @HappyPath
+Scenario Outline: Get the badges identified by ids.             # src/test/resources/cucumber.features/GetBadgesIds.feature:11
+07-02-2024 12:10:57.346 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [1e79b73f-532e-44e0-a42b-b9ef0e86dfd2] ##
+Request method:	GET
+Request path:	https://api.stackexchange.com/2.3/badges/262?order=desc&sort=rank&site=stackoverflow
+Request params:	<none>
+Query params:	order=desc
+				sort=rank
+				site=stackoverflow
+Path params:	<none>
+Headers:		Accept=*/*
+Body:			<none>
+07-02-2024 12:10:57.349 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [1e79b73f-532e-44e0-a42b-b9ef0e86dfd2] ##
+HTTP/1.1 200 OK
+cache-control: private
+content-length: 184
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+strict-transport-security: max-age=15552000
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST
+access-control-allow-credentials: false
+x-content-type-options: nosniff
+x-request-guid: a21d9e3d-474d-4fe8-af96-58a068abe7a9
+set-cookie: prov=4c85647e-7a5e-46ec-8656-f9acb4d319b6; expires=Fri, 07 Feb 2025 06:40:57 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
+date: Wed, 07 Feb 2024 06:40:56 GMT
+prov=4c85647e-7a5e-46ec-8656-f9acb4d319b6;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:40{
+    "items": [
+        {
+            "badge_type": "named",
+            "award_count": 12974,
+            "rank": "gold",
+            "badge_id": 262,
+            "link": "https://stackoverflow.com/badges/262/publicist",
+            "name": "Publicist"
+        }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 297
+}
+
+  Given user call the get endpoint to get badges "262" for 'id' # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
+  Then user receive a 200 HTTP response                         # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
+
+@BadgesAPI @HappyPath
+Scenario Outline: Get the badges identified by ids.          # src/test/resources/cucumber.features/GetBadgesIds.feature:12
+07-02-2024 12:10:58.994 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [18634eee-5da3-46fc-a956-0180384f6bdc] ##
+Request method:	GET
+Request path:	https://api.stackexchange.com/2.3/badges/?order=desc&sort=rank&site=stackoverflow
+Request params:	<none>
+Query params:	order=desc
+				sort=rank
+				site=stackoverflow
+Path params:	<none>
+Headers:		Accept=*/*
+Body:			<none>
+07-02-2024 12:10:59.013 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [18634eee-5da3-46fc-a956-0180384f6bdc] ##
+HTTP/1.1 200 OK
+cache-control: private
+content-length: 717
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+strict-transport-security: max-age=15552000
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST
+access-control-allow-credentials: false
+x-content-type-options: nosniff
+x-request-guid: d317ff90-5af9-4dcd-b6f9-be8984445453
+set-cookie: prov=4ea70b88-31db-414b-8ef6-1d13be6f9672; expires=Fri, 07 Feb 2025 06:40:58 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
+date: Wed, 07 Feb 2024 06:40:58 GMT
+prov=4ea70b88-31db-414b-8ef6-1d13be6f9672;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:40{
+    "items": [
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 6440,
+            "link": "https://stackoverflow.com/badges/6440/n-gram",
+            "name": "n-gram"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 9296,
+            "link": "https://stackoverflow.com/badges/9296/ngroute",
+            "name": "ngroute"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 8,
+            "rank": "bronze",
+            "badge_id": 6944,
+            "link": "https://stackoverflow.com/badges/6944/ngrx",
+            "name": "ngrx"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 9542,
+            "link": "https://stackoverflow.com/badges/9542/ngrx-effects",
+            "name": "ngrx-effects"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 9787,
+            "link": "https://stackoverflow.com/badges/9787/ngrx-store",
+            "name": "ngrx-store"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 8454,
+            "link": "https://stackoverflow.com/badges/8454/ngx-bootstrap",
+            "name": "ngx-bootstrap"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 11752,
+            "link": "https://stackoverflow.com/badges/11752/ngxs",
+            "name": "ngxs"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 70,
+            "rank": "bronze",
+            "badge_id": 332,
+            "link": "https://stackoverflow.com/badges/332/nhibernate",
+            "name": "nhibernate"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 7,
+            "rank": "bronze",
+            "badge_id": 1094,
+            "link": "https://stackoverflow.com/badges/1094/nhibernate-mapping",
+            "name": "nhibernate-mapping"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 9207,
+            "link": "https://stackoverflow.com/badges/9207/nightwatch-js",
+            "name": "nightwatch.js"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 2710,
+            "link": "https://stackoverflow.com/badges/2710/nimbus",
+            "name": "nimbus"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 7,
+            "rank": "bronze",
+            "badge_id": 9001,
+            "link": "https://stackoverflow.com/badges/9001/nim-lang",
+            "name": "nim-lang"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 12,
+            "rank": "bronze",
+            "badge_id": 994,
+            "link": "https://stackoverflow.com/badges/994/ninject",
+            "name": "ninject"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 1465,
+            "link": "https://stackoverflow.com/badges/1465/ninject-2",
+            "name": "ninject-2"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 2991,
+            "link": "https://stackoverflow.com/badges/2991/ninject-extensions",
+            "name": "ninject-extensions"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 6,
+            "rank": "bronze",
+            "badge_id": 1807,
+            "link": "https://stackoverflow.com/badges/1807/nio",
+            "name": "nio"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 2,
+            "rank": "bronze",
+            "badge_id": 9212,
+            "link": "https://stackoverflow.com/badges/9212/nix",
+            "name": "nix"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 9693,
+            "link": "https://stackoverflow.com/badges/9693/nixos",
+            "name": "nixos"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 7576,
+            "link": "https://stackoverflow.com/badges/7576/nlme",
+            "name": "nlme"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 4,
+            "rank": "bronze",
+            "badge_id": 1389,
+            "link": "https://stackoverflow.com/badges/1389/nlog",
+            "name": "nlog"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 38,
+            "rank": "bronze",
+            "badge_id": 797,
+            "link": "https://stackoverflow.com/badges/797/nlp",
+            "name": "nlp"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 2,
+            "rank": "bronze",
+            "badge_id": 8565,
+            "link": "https://stackoverflow.com/badges/8565/nls",
+            "name": "nls"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 8,
+            "rank": "bronze",
+            "badge_id": 2667,
+            "link": "https://stackoverflow.com/badges/2667/nltk",
+            "name": "nltk"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 6459,
+            "link": "https://stackoverflow.com/badges/6459/nmap",
+            "name": "nmap"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 2,
+            "rank": "bronze",
+            "badge_id": 3989,
+            "link": "https://stackoverflow.com/badges/3989/nodatime",
+            "name": "nodatime"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1276,
+            "rank": "bronze",
+            "badge_id": 899,
+            "link": "https://stackoverflow.com/badges/899/node-js",
+            "name": "node.js"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 6505,
+            "link": "https://stackoverflow.com/badges/6505/nodemcu",
+            "name": "nodemcu"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 2,
+            "rank": "bronze",
+            "badge_id": 7955,
+            "link": "https://stackoverflow.com/badges/7955/node-modules",
+            "name": "node-modules"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 6978,
+            "link": "https://stackoverflow.com/badges/6978/node-mongodb-native",
+            "name": "node-mongodb-native"
+        },
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 10894,
+            "link": "https://stackoverflow.com/badges/10894/node-oracledb",
+            "name": "node-oracledb"
+        }
+    ],
+    "has_more": true,
+    "quota_max": 300,
+    "quota_remaining": 296
+}
+
+  Given user call the get endpoint to get badges "" for 'id' # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
+  Then user receive a 200 HTTP response                      # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
+
+@BadgesAPI @UnhappyPath
+Scenario Outline: To verify get badges endpoint returns error response for incorrect badge id # src/test/resources/cucumber.features/GetBadgesIds.feature:20
+07-02-2024 12:11:00.729 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [80018ed8-94ca-497b-95ee-4e6632da46c1] ##
+Request method:	GET
+Request path:	https://api.stackexchange.com/2.3/badges/605tw?order=desc&sort=rank&site=stackoverflow
+Request params:	<none>
+Query params:	order=desc
+				sort=rank
+				site=stackoverflow
+Path params:	<none>
+Headers:		Accept=*/*
+Body:			<none>
+07-02-2024 12:11:00.730 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [80018ed8-94ca-497b-95ee-4e6632da46c1] ##
+HTTP/1.1 400 Bad Request
+cache-control: private
+content-length: 97
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+strict-transport-security: max-age=15552000
+x-error-status: 404
+x-error-name: no_method
+x-error-message: no method found with this name
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST
+access-control-allow-credentials: false
+x-content-type-options: nosniff
+x-request-guid: b1f3a1b8-2ac6-49a9-87be-ac61d9478a4b
+set-cookie: prov=ddf635fb-e7ec-4152-8f72-94995d557ae3; expires=Fri, 07 Feb 2025 06:41:00 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
+date: Wed, 07 Feb 2024 06:41:00 GMT
+prov=ddf635fb-e7ec-4152-8f72-94995d557ae3;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+    "error_id": 404,
+    "error_message": "no method found with this name",
+    "error_name": "no_method"
+}
+
+  Given user call the get endpoint to get badges "605tw" for 'id'                             # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
+  Then user receive a 400 HTTP response                                                       # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
+
+@BadgesAPI @UnhappyPath
+Scenario Outline: To verify get badges endpoint returns correct error message for incorrect badge id # src/test/resources/cucumber.features/GetBadgesIds.feature:31
+07-02-2024 12:11:02.557 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [7a8c4ad6-ec1e-4d68-8aef-81fb6a23a285] ##
+Request method:	GET
+Request path:	https://api.stackexchange.com/2.3/badges/635tw?order=desc&sort=rank&site=stackoverflow
+Request params:	<none>
+Query params:	order=desc
+				sort=rank
+				site=stackoverflow
+Path params:	<none>
+Headers:		Accept=*/*
+Body:			<none>
+07-02-2024 12:11:02.561 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [7a8c4ad6-ec1e-4d68-8aef-81fb6a23a285] ##
+HTTP/1.1 400 Bad Request
+cache-control: private
+content-length: 97
+content-type: application/json; charset=utf-8
+content-encoding: gzip
+strict-transport-security: max-age=15552000
+x-error-status: 404
+x-error-name: no_method
+x-error-message: no method found with this name
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST
+access-control-allow-credentials: false
+x-content-type-options: nosniff
+x-request-guid: 7d965e8e-b02f-466e-960c-79ac7ad32cfe
+set-cookie: prov=5e932b26-36f9-4918-a65b-e3026892115d; expires=Fri, 07 Feb 2025 06:41:02 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
+date: Wed, 07 Feb 2024 06:41:01 GMT
+prov=5e932b26-36f9-4918-a65b-e3026892115d;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+    "error_id": 404,
+    "error_message": "no method found with this name",
+    "error_name": "no_method"
+}
+
+  Given user call the get endpoint to get badges "635tw" for 'id'                                    # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
+  Then user receive a 400 HTTP response                                                              # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
+  And verify response parameters are available                                                       # com.example.stackExchange.stepdefs.GeneralSteps.verifyresponseparametersavailable(java.util.List<java.util.List<java.lang.String>>)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
