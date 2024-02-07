@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Returns result for stackExchange badges API #1" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-02-07T06:40:49" hostname="ANIKETs-MacBook-Pro.local" time="14.059">
+<testsuite name="Returns result for stackExchange badges API #1" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-02-07T09:15:07" hostname="ANIKETs-MacBook-Pro.local" time="17.607">
   <properties/>
-  <testcase name="Get the badges identified by ids. #1" classname="Returns result for stackExchange badges API #1" time="6.47"/>
-  <testcase name="Get the badges identified by ids. #2" classname="Returns result for stackExchange badges API #1" time="1.637"/>
-  <testcase name="Get the badges identified by ids. #3" classname="Returns result for stackExchange badges API #1" time="1.681"/>
-  <testcase name="To verify get badges endpoint returns error response for incorrect badge id" classname="Returns result for stackExchange badges API #1" time="1.705"/>
-  <testcase name="To verify get badges endpoint returns correct error message for incorrect badge id" classname="Returns result for stackExchange badges API #1" time="2.564"/>
+  <testcase name="Get the badges identified by ids. #1" classname="Returns result for stackExchange badges API #1" time="9.961"/>
+  <testcase name="Get the badges identified by ids. #2" classname="Returns result for stackExchange badges API #1" time="1.786"/>
+  <testcase name="Get the badges identified by ids. #3" classname="Returns result for stackExchange badges API #1" time="2.161"/>
+  <testcase name="To verify get badges endpoint returns error response for incorrect badge id" classname="Returns result for stackExchange badges API #1" time="1.659"/>
+  <testcase name="To verify get badges endpoint returns correct error message for incorrect badge id" classname="Returns result for stackExchange badges API #1" time="2.04"/>
   <system-out><![CDATA[
 @BadgesAPI @HappyPath
 Scenario Outline: Get the badges identified by ids.             # src/test/resources/cucumber.features/GetBadgesIds.feature:10
-07-02-2024 12:10:55.313 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [bbc81c20-6599-4f7d-8074-afd4be3557da] ##
+07-02-2024 14:45:17.470 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [b5a0a522-a7e0-4553-a4f5-c4430f54d20c] ##
 Request method:	GET
 Request path:	https://api.stackexchange.com/2.3/badges/?order=desc&sort=rank&site=stackoverflow
 Request params:	<none>
@@ -19,7 +19,7 @@ Query params:	order=desc
 Path params:	<none>
 Headers:		Accept=*/*
 Body:			<none>
-07-02-2024 12:10:55.465 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [bbc81c20-6599-4f7d-8074-afd4be3557da] ##
+07-02-2024 14:45:17.541 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [b5a0a522-a7e0-4553-a4f5-c4430f54d20c] ##
 HTTP/1.1 200 OK
 cache-control: private
 content-length: 717
@@ -30,11 +30,11 @@ access-control-allow-origin: *
 access-control-allow-methods: GET, POST
 access-control-allow-credentials: false
 x-content-type-options: nosniff
-x-request-guid: 772d030a-187d-4d9c-bf57-35798da73fc8
-set-cookie: prov=018e5c34-39b2-41ad-bea6-f7ae6704ddf5; expires=Fri, 07 Feb 2025 06:40:55 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+x-request-guid: 8442ab7f-a700-447c-858b-cbc31b492c4f
+set-cookie: prov=eafaf89f-ff19-45d2-a1c5-5100f416b3fd; expires=Fri, 07 Feb 2025 09:15:17 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
 content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
-date: Wed, 07 Feb 2024 06:40:54 GMT
-prov=018e5c34-39b2-41ad-bea6-f7ae6704ddf5;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:40{
+date: Wed, 07 Feb 2024 09:15:17 GMT
+prov=eafaf89f-ff19-45d2-a1c5-5100f416b3fd;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 09:15{
     "items": [
         {
             "badge_type": "tag_based",
@@ -279,7 +279,7 @@ prov=018e5c34-39b2-41ad-bea6-f7ae6704ddf5;Path=/;Domain=.stackexchange.com;Secur
     ],
     "has_more": true,
     "quota_max": 300,
-    "quota_remaining": 298
+    "quota_remaining": 279
 }
 
   Given user call the get endpoint to get badges "ALL" for 'id' # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
@@ -287,7 +287,7 @@ prov=018e5c34-39b2-41ad-bea6-f7ae6704ddf5;Path=/;Domain=.stackexchange.com;Secur
 
 @BadgesAPI @HappyPath
 Scenario Outline: Get the badges identified by ids.             # src/test/resources/cucumber.features/GetBadgesIds.feature:11
-07-02-2024 12:10:57.346 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [1e79b73f-532e-44e0-a42b-b9ef0e86dfd2] ##
+07-02-2024 14:45:19.427 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [ea24bd45-21d7-45f3-a4a6-e25292c383d9] ##
 Request method:	GET
 Request path:	https://api.stackexchange.com/2.3/badges/262?order=desc&sort=rank&site=stackoverflow
 Request params:	<none>
@@ -297,7 +297,7 @@ Query params:	order=desc
 Path params:	<none>
 Headers:		Accept=*/*
 Body:			<none>
-07-02-2024 12:10:57.349 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [1e79b73f-532e-44e0-a42b-b9ef0e86dfd2] ##
+07-02-2024 14:45:19.436 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [ea24bd45-21d7-45f3-a4a6-e25292c383d9] ##
 HTTP/1.1 200 OK
 cache-control: private
 content-length: 184
@@ -308,11 +308,11 @@ access-control-allow-origin: *
 access-control-allow-methods: GET, POST
 access-control-allow-credentials: false
 x-content-type-options: nosniff
-x-request-guid: a21d9e3d-474d-4fe8-af96-58a068abe7a9
-set-cookie: prov=4c85647e-7a5e-46ec-8656-f9acb4d319b6; expires=Fri, 07 Feb 2025 06:40:57 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+x-request-guid: 2724f43d-5652-47e1-a6f8-8045140f05d5
+set-cookie: prov=f4f28db2-39b8-4c0e-a7eb-7b471c3deb98; expires=Fri, 07 Feb 2025 09:15:19 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
 content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
-date: Wed, 07 Feb 2024 06:40:56 GMT
-prov=4c85647e-7a5e-46ec-8656-f9acb4d319b6;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:40{
+date: Wed, 07 Feb 2024 09:15:19 GMT
+prov=f4f28db2-39b8-4c0e-a7eb-7b471c3deb98;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 09:15{
     "items": [
         {
             "badge_type": "named",
@@ -325,7 +325,7 @@ prov=4c85647e-7a5e-46ec-8656-f9acb4d319b6;Path=/;Domain=.stackexchange.com;Secur
     ],
     "has_more": false,
     "quota_max": 300,
-    "quota_remaining": 297
+    "quota_remaining": 278
 }
 
   Given user call the get endpoint to get badges "262" for 'id' # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
@@ -333,7 +333,7 @@ prov=4c85647e-7a5e-46ec-8656-f9acb4d319b6;Path=/;Domain=.stackexchange.com;Secur
 
 @BadgesAPI @HappyPath
 Scenario Outline: Get the badges identified by ids.          # src/test/resources/cucumber.features/GetBadgesIds.feature:12
-07-02-2024 12:10:58.994 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [18634eee-5da3-46fc-a956-0180384f6bdc] ##
+07-02-2024 14:45:21.584 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [c53092ed-a9a9-4054-9273-6433100643f5] ##
 Request method:	GET
 Request path:	https://api.stackexchange.com/2.3/badges/?order=desc&sort=rank&site=stackoverflow
 Request params:	<none>
@@ -343,7 +343,7 @@ Query params:	order=desc
 Path params:	<none>
 Headers:		Accept=*/*
 Body:			<none>
-07-02-2024 12:10:59.013 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [18634eee-5da3-46fc-a956-0180384f6bdc] ##
+07-02-2024 14:45:21.593 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [c53092ed-a9a9-4054-9273-6433100643f5] ##
 HTTP/1.1 200 OK
 cache-control: private
 content-length: 717
@@ -354,11 +354,11 @@ access-control-allow-origin: *
 access-control-allow-methods: GET, POST
 access-control-allow-credentials: false
 x-content-type-options: nosniff
-x-request-guid: d317ff90-5af9-4dcd-b6f9-be8984445453
-set-cookie: prov=4ea70b88-31db-414b-8ef6-1d13be6f9672; expires=Fri, 07 Feb 2025 06:40:58 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+x-request-guid: d2837e13-d896-49fd-ba50-9d8ed7e7d584
+set-cookie: prov=d06fdde9-2c4b-4546-bafd-47bb84bb3225; expires=Fri, 07 Feb 2025 09:15:21 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
 content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
-date: Wed, 07 Feb 2024 06:40:58 GMT
-prov=4ea70b88-31db-414b-8ef6-1d13be6f9672;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:40{
+date: Wed, 07 Feb 2024 09:15:21 GMT
+prov=d06fdde9-2c4b-4546-bafd-47bb84bb3225;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 09:15{
     "items": [
         {
             "badge_type": "tag_based",
@@ -603,7 +603,7 @@ prov=4ea70b88-31db-414b-8ef6-1d13be6f9672;Path=/;Domain=.stackexchange.com;Secur
     ],
     "has_more": true,
     "quota_max": 300,
-    "quota_remaining": 296
+    "quota_remaining": 277
 }
 
   Given user call the get endpoint to get badges "" for 'id' # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
@@ -611,7 +611,7 @@ prov=4ea70b88-31db-414b-8ef6-1d13be6f9672;Path=/;Domain=.stackexchange.com;Secur
 
 @BadgesAPI @UnhappyPath
 Scenario Outline: To verify get badges endpoint returns error response for incorrect badge id # src/test/resources/cucumber.features/GetBadgesIds.feature:20
-07-02-2024 12:11:00.729 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [80018ed8-94ca-497b-95ee-4e6632da46c1] ##
+07-02-2024 14:45:23.257 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [484b6965-8419-4bc9-8157-22c9dd8b4fad] ##
 Request method:	GET
 Request path:	https://api.stackexchange.com/2.3/badges/605tw?order=desc&sort=rank&site=stackoverflow
 Request params:	<none>
@@ -621,7 +621,7 @@ Query params:	order=desc
 Path params:	<none>
 Headers:		Accept=*/*
 Body:			<none>
-07-02-2024 12:11:00.730 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [80018ed8-94ca-497b-95ee-4e6632da46c1] ##
+07-02-2024 14:45:23.259 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [484b6965-8419-4bc9-8157-22c9dd8b4fad] ##
 HTTP/1.1 400 Bad Request
 cache-control: private
 content-length: 97
@@ -635,11 +635,11 @@ access-control-allow-origin: *
 access-control-allow-methods: GET, POST
 access-control-allow-credentials: false
 x-content-type-options: nosniff
-x-request-guid: b1f3a1b8-2ac6-49a9-87be-ac61d9478a4b
-set-cookie: prov=ddf635fb-e7ec-4152-8f72-94995d557ae3; expires=Fri, 07 Feb 2025 06:41:00 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+x-request-guid: f33a4b91-fd74-4867-9e8d-808b8665d7d0
+set-cookie: prov=f49451f9-38e5-4885-95f6-8ee3614b354c; expires=Fri, 07 Feb 2025 09:15:23 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
 content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
-date: Wed, 07 Feb 2024 06:41:00 GMT
-prov=ddf635fb-e7ec-4152-8f72-94995d557ae3;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+date: Wed, 07 Feb 2024 09:15:23 GMT
+prov=f49451f9-38e5-4885-95f6-8ee3614b354c;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 09:15{
     "error_id": 404,
     "error_message": "no method found with this name",
     "error_name": "no_method"
@@ -650,7 +650,7 @@ prov=ddf635fb-e7ec-4152-8f72-94995d557ae3;Path=/;Domain=.stackexchange.com;Secur
 
 @BadgesAPI @UnhappyPath
 Scenario Outline: To verify get badges endpoint returns correct error message for incorrect badge id # src/test/resources/cucumber.features/GetBadgesIds.feature:31
-07-02-2024 12:11:02.557 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [7a8c4ad6-ec1e-4d68-8aef-81fb6a23a285] ##
+07-02-2024 14:45:24.904 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [150aec8a-6173-4faf-9ae1-f5bd726cbd1c] ##
 Request method:	GET
 Request path:	https://api.stackexchange.com/2.3/badges/635tw?order=desc&sort=rank&site=stackoverflow
 Request params:	<none>
@@ -660,7 +660,7 @@ Query params:	order=desc
 Path params:	<none>
 Headers:		Accept=*/*
 Body:			<none>
-07-02-2024 12:11:02.561 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [7a8c4ad6-ec1e-4d68-8aef-81fb6a23a285] ##
+07-02-2024 14:45:24.906 ?[35m[Test worker]?[0;39m ?[34mINFO ?[0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [150aec8a-6173-4faf-9ae1-f5bd726cbd1c] ##
 HTTP/1.1 400 Bad Request
 cache-control: private
 content-length: 97
@@ -674,11 +674,11 @@ access-control-allow-origin: *
 access-control-allow-methods: GET, POST
 access-control-allow-credentials: false
 x-content-type-options: nosniff
-x-request-guid: 7d965e8e-b02f-466e-960c-79ac7ad32cfe
-set-cookie: prov=5e932b26-36f9-4918-a65b-e3026892115d; expires=Fri, 07 Feb 2025 06:41:02 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+x-request-guid: 2998c111-4530-41c9-aa38-8a388a8c0c2c
+set-cookie: prov=622206fa-86c3-45dc-8717-d9ceaedb99ce; expires=Fri, 07 Feb 2025 09:15:24 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
 content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
-date: Wed, 07 Feb 2024 06:41:01 GMT
-prov=5e932b26-36f9-4918-a65b-e3026892115d;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+date: Wed, 07 Feb 2024 09:15:24 GMT
+prov=622206fa-86c3-45dc-8717-d9ceaedb99ce;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 09:15{
     "error_id": 404,
     "error_message": "no method found with this name",
     "error_name": "no_method"

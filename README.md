@@ -7,7 +7,7 @@ Concepts Included Validation of different status codes of an API Validation of d
 
 #Requirements To utilise this project, you need to have the following installed locally:
 
-Gradle 5.5.1 JDK 17.0.7 plugins -- Cucumber for java Gherkin Lombok
+Gradle 6.3 JDK 17.0.7 plugins -- Cucumber for java Gherkin Lombok
 
 #Usage The project is broken into separate feature file for each endpoint of an API. Each of these modules can be utilised independently and each module represents the test cases for the respective endpoint.
 

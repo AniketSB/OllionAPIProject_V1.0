@@ -1,7 +1,7 @@
 
 @BadgesAPI @HappyPath
 Scenario Outline: Get the badges identified by ids.             # src/test/resources/cucumber.features/GetBadgesIds.feature:10
-±07-02-2024 12:10:55.313 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [bbc81c20-6599-4f7d-8074-afd4be3557da] ##
+±07-02-2024 14:45:17.470 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [b5a0a522-a7e0-4553-a4f5-c4430f54d20c] ##
 Request method:	GET
 `Request path:	https://api.stackexchange.com/2.3/badges/?order=desc&sort=rank&site=stackoverflow
 Request params:	<none>
@@ -11,7 +11,7 @@
 Path params:	<none>
 Headers:		Accept=*/*
 Body:			<none>
-≥07-02-2024 12:10:55.465 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [bbc81c20-6599-4f7d-8074-afd4be3557da] ##
+≥07-02-2024 14:45:17.541 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [b5a0a522-a7e0-4553-a4f5-c4430f54d20c] ##
 HTTP/1.1 200 OK
 cache-control: private
 content-length: 717
@@ -22,11 +22,11 @@
 (access-control-allow-methods: GET, POST
 (access-control-allow-credentials: false
  x-content-type-options: nosniff
-5x-request-guid: 772d030a-187d-4d9c-bf57-35798da73fc8
-°set-cookie: prov=018e5c34-39b2-41ad-bea6-f7ae6704ddf5; expires=Fri, 07 Feb 2025 06:40:55 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+5x-request-guid: 8442ab7f-a700-447c-858b-cbc31b492c4f
+°set-cookie: prov=eafaf89f-ff19-45d2-a1c5-5100f416b3fd; expires=Fri, 07 Feb 2025 09:15:17 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
 econtent-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
-$date: Wed, 07 Feb 2024 06:40:54 GMT
-vprov=018e5c34-39b2-41ad-bea6-f7ae6704ddf5;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:40{
+$date: Wed, 07 Feb 2024 09:15:17 GMT
+vprov=eafaf89f-ff19-45d2-a1c5-5100f416b3fd;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 09:15{
     "items": [
 
         {
@@ -302,7 +302,7 @@
     ],
     "has_more": true,
     "quota_max": 300,
-    "quota_remaining": 298
+    "quota_remaining": 279
 }
 
 π  Given user call the get endpoint to get badges "ALL" for 'id' # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
@@ -310,7 +310,7 @@
 
 @BadgesAPI @HappyPath
 Scenario Outline: Get the badges identified by ids.             # src/test/resources/cucumber.features/GetBadgesIds.feature:11
-±07-02-2024 12:10:57.346 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [1e79b73f-532e-44e0-a42b-b9ef0e86dfd2] ##
+±07-02-2024 14:45:19.427 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [ea24bd45-21d7-45f3-a4a6-e25292c383d9] ##
 Request method:	GET
 cRequest path:	https://api.stackexchange.com/2.3/badges/262?order=desc&sort=rank&site=stackoverflow
 Request params:	<none>
@@ -320,7 +320,7 @@
 Path params:	<none>
 Headers:		Accept=*/*
 Body:			<none>
-≥07-02-2024 12:10:57.349 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [1e79b73f-532e-44e0-a42b-b9ef0e86dfd2] ##
+≥07-02-2024 14:45:19.436 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [ea24bd45-21d7-45f3-a4a6-e25292c383d9] ##
 HTTP/1.1 200 OK
 cache-control: private
 content-length: 184
@@ -331,11 +331,11 @@
 (access-control-allow-methods: GET, POST
 (access-control-allow-credentials: false
  x-content-type-options: nosniff
-5x-request-guid: a21d9e3d-474d-4fe8-af96-58a068abe7a9
-°set-cookie: prov=4c85647e-7a5e-46ec-8656-f9acb4d319b6; expires=Fri, 07 Feb 2025 06:40:57 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+5x-request-guid: 2724f43d-5652-47e1-a6f8-8045140f05d5
+°set-cookie: prov=f4f28db2-39b8-4c0e-a7eb-7b471c3deb98; expires=Fri, 07 Feb 2025 09:15:19 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
 econtent-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
-$date: Wed, 07 Feb 2024 06:40:56 GMT
-vprov=4c85647e-7a5e-46ec-8656-f9acb4d319b6;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:40{
+$date: Wed, 07 Feb 2024 09:15:19 GMT
+vprov=f4f28db2-39b8-4c0e-a7eb-7b471c3deb98;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 09:15{
     "items": [
 
         {
@@ -350,7 +350,7 @@
     ],
     "has_more": false,
     "quota_max": 300,
-    "quota_remaining": 297
+    "quota_remaining": 278
 }
 
 π  Given user call the get endpoint to get badges "262" for 'id' # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
@@ -358,7 +358,7 @@
 
 @BadgesAPI @HappyPath
 |Scenario Outline: Get the badges identified by ids.          # src/test/resources/cucumber.features/GetBadgesIds.feature:12
-±07-02-2024 12:10:58.994 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [18634eee-5da3-46fc-a956-0180384f6bdc] ##
+±07-02-2024 14:45:21.584 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [c53092ed-a9a9-4054-9273-6433100643f5] ##
 Request method:	GET
 `Request path:	https://api.stackexchange.com/2.3/badges/?order=desc&sort=rank&site=stackoverflow
 Request params:	<none>
@@ -368,7 +368,7 @@
 Path params:	<none>
 Headers:		Accept=*/*
 Body:			<none>
-≥07-02-2024 12:10:59.013 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [18634eee-5da3-46fc-a956-0180384f6bdc] ##
+≥07-02-2024 14:45:21.593 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [c53092ed-a9a9-4054-9273-6433100643f5] ##
 HTTP/1.1 200 OK
 cache-control: private
 content-length: 717
@@ -379,11 +379,11 @@
 (access-control-allow-methods: GET, POST
 (access-control-allow-credentials: false
  x-content-type-options: nosniff
-5x-request-guid: d317ff90-5af9-4dcd-b6f9-be8984445453
-°set-cookie: prov=4ea70b88-31db-414b-8ef6-1d13be6f9672; expires=Fri, 07 Feb 2025 06:40:58 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+5x-request-guid: d2837e13-d896-49fd-ba50-9d8ed7e7d584
+°set-cookie: prov=d06fdde9-2c4b-4546-bafd-47bb84bb3225; expires=Fri, 07 Feb 2025 09:15:21 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
 econtent-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
-$date: Wed, 07 Feb 2024 06:40:58 GMT
-vprov=4ea70b88-31db-414b-8ef6-1d13be6f9672;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:40{
+$date: Wed, 07 Feb 2024 09:15:21 GMT
+vprov=d06fdde9-2c4b-4546-bafd-47bb84bb3225;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 09:15{
     "items": [
 
         {
@@ -659,7 +659,7 @@
     ],
     "has_more": true,
     "quota_max": 300,
-    "quota_remaining": 296
+    "quota_remaining": 277
 }
 
 ∂  Given user call the get endpoint to get badges "" for 'id' # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
@@ -667,7 +667,7 @@
 
 @BadgesAPI @UnhappyPath
 ùScenario Outline: To verify get badges endpoint returns error response for incorrect badge id # src/test/resources/cucumber.features/GetBadgesIds.feature:20
-±07-02-2024 12:11:00.729 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [80018ed8-94ca-497b-95ee-4e6632da46c1] ##
+±07-02-2024 14:45:23.257 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [484b6965-8419-4bc9-8157-22c9dd8b4fad] ##
 Request method:	GET
 eRequest path:	https://api.stackexchange.com/2.3/badges/605tw?order=desc&sort=rank&site=stackoverflow
 Request params:	<none>
@@ -677,7 +677,7 @@
 Path params:	<none>
 Headers:		Accept=*/*
 Body:			<none>
-≥07-02-2024 12:11:00.730 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [80018ed8-94ca-497b-95ee-4e6632da46c1] ##
+≥07-02-2024 14:45:23.259 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [484b6965-8419-4bc9-8157-22c9dd8b4fad] ##
 HTTP/1.1 400 Bad Request
 cache-control: private
 content-length: 97
@@ -691,11 +691,11 @@
 (access-control-allow-methods: GET, POST
 (access-control-allow-credentials: false
  x-content-type-options: nosniff
-5x-request-guid: b1f3a1b8-2ac6-49a9-87be-ac61d9478a4b
-°set-cookie: prov=ddf635fb-e7ec-4152-8f72-94995d557ae3; expires=Fri, 07 Feb 2025 06:41:00 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+5x-request-guid: f33a4b91-fd74-4867-9e8d-808b8665d7d0
+°set-cookie: prov=f49451f9-38e5-4885-95f6-8ee3614b354c; expires=Fri, 07 Feb 2025 09:15:23 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
 econtent-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
-$date: Wed, 07 Feb 2024 06:41:00 GMT
-vprov=ddf635fb-e7ec-4152-8f72-94995d557ae3;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+$date: Wed, 07 Feb 2024 09:15:23 GMT
+vprov=f49451f9-38e5-4885-95f6-8ee3614b354c;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 09:15{
     "error_id": 404,
 7    "error_message": "no method found with this name",
     "error_name": "no_method"
@@ -706,7 +706,7 @@
 
 @BadgesAPI @UnhappyPath
 §Scenario Outline: To verify get badges endpoint returns correct error message for incorrect badge id # src/test/resources/cucumber.features/GetBadgesIds.feature:31
-±07-02-2024 12:11:02.557 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [7a8c4ad6-ec1e-4d68-8aef-81fb6a23a285] ##
+±07-02-2024 14:45:24.904 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [150aec8a-6173-4faf-9ae1-f5bd726cbd1c] ##
 Request method:	GET
 eRequest path:	https://api.stackexchange.com/2.3/badges/635tw?order=desc&sort=rank&site=stackoverflow
 Request params:	<none>
@@ -716,7 +716,7 @@
 Path params:	<none>
 Headers:		Accept=*/*
 Body:			<none>
-≥07-02-2024 12:11:02.561 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [7a8c4ad6-ec1e-4d68-8aef-81fb6a23a285] ##
+≥07-02-2024 14:45:24.906 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [150aec8a-6173-4faf-9ae1-f5bd726cbd1c] ##
 HTTP/1.1 400 Bad Request
 cache-control: private
 content-length: 97
@@ -730,11 +730,11 @@
 (access-control-allow-methods: GET, POST
 (access-control-allow-credentials: false
  x-content-type-options: nosniff
-5x-request-guid: 7d965e8e-b02f-466e-960c-79ac7ad32cfe
-°set-cookie: prov=5e932b26-36f9-4918-a65b-e3026892115d; expires=Fri, 07 Feb 2025 06:41:02 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+5x-request-guid: 2998c111-4530-41c9-aa38-8a388a8c0c2c
+°set-cookie: prov=622206fa-86c3-45dc-8717-d9ceaedb99ce; expires=Fri, 07 Feb 2025 09:15:24 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
 econtent-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
-$date: Wed, 07 Feb 2024 06:41:01 GMT
-vprov=5e932b26-36f9-4918-a65b-e3026892115d;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+$date: Wed, 07 Feb 2024 09:15:24 GMT
+vprov=622206fa-86c3-45dc-8717-d9ceaedb99ce;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 09:15{
     "error_id": 404,
 7    "error_message": "no method found with this name",
     "error_name": "no_method"
@@ -746,7 +746,7 @@
 
 @BadgesAPI @HappyPath
 ÇScenario Outline: Get the badges identified by tags.              # src/test/resources/cucumber.features/GetBadgesTags.feature:10
-±07-02-2024 12:11:05.153 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [b58ca296-71d6-419a-aebd-45bbc67f6465] ##
+±07-02-2024 14:45:27.170 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [52b1c3cd-080d-4792-a555-69f8e20fd242] ##
 Request method:	GET
 dRequest path:	https://api.stackexchange.com/2.3/badges/tags?order=desc&sort=rank&site=stackoverflow
 Request params:	<none>
@@ -756,7 +756,7 @@
 Path params:	<none>
 Headers:		Accept=*/*
 Body:			<none>
-≥07-02-2024 12:11:05.172 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [b58ca296-71d6-419a-aebd-45bbc67f6465] ##
+≥07-02-2024 14:45:27.174 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [52b1c3cd-080d-4792-a555-69f8e20fd242] ##
 HTTP/1.1 200 OK
 cache-control: private
 content-length: 738
@@ -767,11 +767,11 @@
 (access-control-allow-methods: GET, POST
 (access-control-allow-credentials: false
  x-content-type-options: nosniff
-5x-request-guid: f44605a8-d775-4b2a-91ed-15983b715451
-°set-cookie: prov=941dc0c4-ed7a-4710-a842-096cb21b957b; expires=Fri, 07 Feb 2025 06:41:04 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+5x-request-guid: af63ef50-0d1c-43b5-a820-1270d73afe15
+°set-cookie: prov=a80fa5b8-1f2f-40ee-828c-00086eb14a97; expires=Fri, 07 Feb 2025 09:15:26 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
 econtent-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
-$date: Wed, 07 Feb 2024 06:41:04 GMT
-vprov=941dc0c4-ed7a-4710-a842-096cb21b957b;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+$date: Wed, 07 Feb 2024 09:15:26 GMT
+vprov=a80fa5b8-1f2f-40ee-828c-00086eb14a97;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 09:15{
     "items": [
 
         {
@@ -1047,7 +1047,7 @@
     ],
     "has_more": true,
     "quota_max": 300,
-    "quota_remaining": 293
+    "quota_remaining": 274
 }
 
 ª  Given user call the get endpoint to get badges "ALL" for 'tags' # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
@@ -1055,7 +1055,7 @@
 	
 	@BadgesAPI @UnhappyPath
 	öScenario Outline: To verify get badges endpoint returns error response for incorrect tags # src/test/resources/cucumber.features/GetBadgesTags.feature:18
-	±07-02-2024 12:11:06.897 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [32c9752b-e396-401f-baee-64d3c4fb8bbb] ##
+	±07-02-2024 14:45:28.997 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [3cb7a5cf-b844-4e60-8878-972ca684c739] ##
 	Request method:	GET
 	jRequest path:	https://api.stackexchange.com/2.3/badges/111ee/tags?order=desc&sort=rank&site=stackoverflow
 	Request params:	<none>
@@ -1065,7 +1065,7 @@
 	Path params:	<none>
 	Headers:		Accept=*/*
 	Body:			<none>
-	≥07-02-2024 12:11:06.900 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [32c9752b-e396-401f-baee-64d3c4fb8bbb] ##
+	≥07-02-2024 14:45:29.001 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [3cb7a5cf-b844-4e60-8878-972ca684c739] ##
 	HTTP/1.1 400 Bad Request
 	cache-control: private
 	content-length: 97
@@ -1079,11 +1079,11 @@
 	(access-control-allow-methods: GET, POST
 	(access-control-allow-credentials: false
 	 x-content-type-options: nosniff
-	5x-request-guid: d06422d7-99ca-41ac-b856-3ada5141117a
-	°set-cookie: prov=8dbf445d-2ac2-4ad4-834f-3ff572ce8d1a; expires=Fri, 07 Feb 2025 06:41:06 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+	5x-request-guid: e0b1a679-ab83-477f-8888-7e51a903f47f
+	°set-cookie: prov=770abeeb-41cd-43e1-8814-069aa1af67fd; expires=Fri, 07 Feb 2025 09:15:28 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
 	econtent-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
-	$date: Wed, 07 Feb 2024 06:41:06 GMT
-	vprov=8dbf445d-2ac2-4ad4-834f-3ff572ce8d1a;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+	$date: Wed, 07 Feb 2024 09:15:28 GMT
+	vprov=770abeeb-41cd-43e1-8814-069aa1af67fd;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 09:15{
 	    "error_id": 404,
 	7    "error_message": "no method found with this name",
 	    "error_name": "no_method"
@@ -1098,7 +1098,7 @@
 
 öScenario Outline: To verify get badges endpoint returns error response for incorrect tags # src/test/resources/cucumber.features/GetBadgesTags.feature:19
 
-±07-02-2024 12:11:08.633 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [cdb15918-0c8c-4b58-accd-a9806c21fe89] ##
+±07-02-2024 14:45:30.629 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [d98e4b9e-1543-4cc7-b32b-0003bb2e02db] ##
 
 Request method:	GET
 
@@ -1118,7 +1118,7 @@ hRequest path:	https://api.stackexchange.com/2.3/badges/269/tags?order=desc&sort
 
 Body:			<none>
 
-≥07-02-2024 12:11:08.635 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [cdb15918-0c8c-4b58-accd-a9806c21fe89] ##
+≥07-02-2024 14:45:30.630 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [d98e4b9e-1543-4cc7-b32b-0003bb2e02db] ##
 
 HTTP/1.1 400 Bad Request
 
@@ -1146,15 +1146,15 @@ hRequest path:	https://api.stackexchange.com/2.3/badges/269/tags?order=desc&sort
 
  x-content-type-options: nosniff
 
-5x-request-guid: e5900de6-eb79-4ba1-8c57-906a45e1ae7c
+5x-request-guid: 95bbf6b1-bf0c-42da-a478-465b18eff3f0
 
-°set-cookie: prov=13de35cc-3dd3-4ea8-9af2-99fce7b91266; expires=Fri, 07 Feb 2025 06:41:08 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+°set-cookie: prov=0d2e91b1-6cdf-4bae-8b4e-05312acf6397; expires=Fri, 07 Feb 2025 09:15:30 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
 
 econtent-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
 
-$date: Wed, 07 Feb 2024 06:41:07 GMT
+$date: Wed, 07 Feb 2024 09:15:30 GMT
 
-vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+vprov=0d2e91b1-6cdf-4bae-8b4e-05312acf6397;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 09:15{
 
     "error_id": 404,
 
@@ -1172,7 +1172,7 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 
 @BadgesAPI @UnhappyPath
 öScenario Outline: To verify get badges endpoint returns error response for incorrect tags # src/test/resources/cucumber.features/GetBadgesTags.feature:20
-±07-02-2024 12:11:10.478 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [73f6d091-66bb-4fee-98e3-d69f5c9a3441] ##
+±07-02-2024 14:45:32.166 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [db4a89b3-2b0e-49b3-9bed-3c09d7335e21] ##
 Request method:	GET
 iRequest path:	https://api.stackexchange.com/2.3/badges%2F%2Ftags?order=desc&sort=rank&site=stackoverflow
 Request params:	<none>
@@ -1182,7 +1182,7 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 Path params:	<none>
 Headers:		Accept=*/*
 Body:			<none>
-≥07-02-2024 12:11:10.482 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [73f6d091-66bb-4fee-98e3-d69f5c9a3441] ##
+≥07-02-2024 14:45:32.167 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [db4a89b3-2b0e-49b3-9bed-3c09d7335e21] ##
 HTTP/1.1 400 Bad Request
 cache-control: private
 content-length: 97
@@ -1196,11 +1196,11 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 (access-control-allow-methods: GET, POST
 (access-control-allow-credentials: false
  x-content-type-options: nosniff
-5x-request-guid: 2c8bb4af-01ec-4db1-92e0-3743a9ad2bc0
-°set-cookie: prov=3e20974a-1b6c-4d72-923c-0f196e2bf395; expires=Fri, 07 Feb 2025 06:41:10 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+5x-request-guid: 94ae8d0f-a173-4674-8dad-91cec46a874b
+°set-cookie: prov=38ce3a1b-f401-474e-958d-98b325bd82c6; expires=Fri, 07 Feb 2025 09:15:32 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
 econtent-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
-$date: Wed, 07 Feb 2024 06:41:09 GMT
-vprov=3e20974a-1b6c-4d72-923c-0f196e2bf395;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+$date: Wed, 07 Feb 2024 09:15:32 GMT
+vprov=38ce3a1b-f401-474e-958d-98b325bd82c6;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 09:15{
     "error_id": 404,
 7    "error_message": "no method found with this name",
     "error_name": "no_method"
@@ -1211,7 +1211,7 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 
 @BadgesAPI @UnhappyPath
 °Scenario Outline: To verify get badges endpoint returns correct error message for incorrect tags # src/test/resources/cucumber.features/GetBadgesTags.feature:31
-±07-02-2024 12:11:12.343 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [cbde29e1-6122-4430-bc8b-31fc391685e7] ##
+±07-02-2024 14:45:33.889 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [4056eb93-26b2-4c49-a048-06242476fb41] ##
 Request method:	GET
 jRequest path:	https://api.stackexchange.com/2.3/badges/555yt/tags?order=desc&sort=rank&site=stackoverflow
 Request params:	<none>
@@ -1221,7 +1221,7 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 Path params:	<none>
 Headers:		Accept=*/*
 Body:			<none>
-≥07-02-2024 12:11:12.352 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [cbde29e1-6122-4430-bc8b-31fc391685e7] ##
+≥07-02-2024 14:45:33.893 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [4056eb93-26b2-4c49-a048-06242476fb41] ##
 HTTP/1.1 400 Bad Request
 cache-control: private
 content-length: 97
@@ -1235,11 +1235,11 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 (access-control-allow-methods: GET, POST
 (access-control-allow-credentials: false
  x-content-type-options: nosniff
-5x-request-guid: 81a991f6-d2d1-4139-9180-2cb67775d747
-°set-cookie: prov=a35b7925-7107-4dfc-9e57-061b60a62d02; expires=Fri, 07 Feb 2025 06:41:12 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+5x-request-guid: 027928b2-d85e-428f-8d4a-3af1b4aa192b
+°set-cookie: prov=daca6b87-a647-480e-afdf-6d0d588df46b; expires=Fri, 07 Feb 2025 09:15:33 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
 econtent-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
-$date: Wed, 07 Feb 2024 06:41:11 GMT
-vprov=a35b7925-7107-4dfc-9e57-061b60a62d02;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+$date: Wed, 07 Feb 2024 09:15:33 GMT
+vprov=daca6b87-a647-480e-afdf-6d0d588df46b;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 09:15{
     "error_id": 404,
 7    "error_message": "no method found with this name",
     "error_name": "no_method"
@@ -1251,7 +1251,7 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 
 @BadgesAPI @HappyPath
 àScenario Outline: Get badges recently awarded on the site.              # src/test/resources/cucumber.features/GetRecipients.feature:10
-±07-02-2024 12:11:14.277 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [5dc00d29-be61-4700-a718-b0aa2926293b] ##
+±07-02-2024 14:45:35.650 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [6c6022ba-8e86-4147-87fe-3bc586b8336c] ##
 Request method:	GET
 URequest path:	https://api.stackexchange.com/2.3/badges/recipients?site=stackoverflow
 Request params:	<none>
@@ -1259,10 +1259,10 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 Path params:	<none>
 Headers:		Accept=*/*
 Body:			<none>
-≥07-02-2024 12:11:14.294 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [5dc00d29-be61-4700-a718-b0aa2926293b] ##
+≥07-02-2024 14:45:35.662 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [6c6022ba-8e86-4147-87fe-3bc586b8336c] ##
 HTTP/1.1 200 OK
 cache-control: private
-content-length: 2339
+content-length: 2350
 .content-type: application/json; charset=utf-8
 content-encoding: gzip
 ,strict-transport-security: max-age=15552000
@@ -1270,22 +1270,22 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 (access-control-allow-methods: GET, POST
 (access-control-allow-credentials: false
  x-content-type-options: nosniff
-5x-request-guid: 0344f8f0-5d4f-4344-9dbf-f22db213e0c3
-°set-cookie: prov=c30af832-0375-43b9-8027-e1f7cb0f674f; expires=Fri, 07 Feb 2025 06:41:14 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+5x-request-guid: b5059e08-4290-4598-9e12-b7b4493cca0e
+°set-cookie: prov=e7a105ca-e4fc-4c79-9102-47daa17a85b3; expires=Fri, 07 Feb 2025 09:15:35 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
 econtent-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
-$date: Wed, 07 Feb 2024 06:41:13 GMT
-vprov=c30af832-0375-43b9-8027-e1f7cb0f674f;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+$date: Wed, 07 Feb 2024 09:15:35 GMT
+vprov=e7a105ca-e4fc-4c79-9102-47daa17a85b3;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 09:15{
     "items": [
 
         {
             "user": {
-(                "account_id": 30481096,
+(                "account_id": 30481842,
 !                "reputation": 1,
-%                "user_id": 23358596,
+%                "user_id": 23359177,
 +                "user_type": "registered",
-R                "profile_image": "https://i.stack.imgur.com/Beg8I.jpg?s=256&g=1",
-)                "display_name": "Willy",
-I                "link": "https://stackoverflow.com/users/23358596/willy"
+Ä                "profile_image": "https://lh3.googleusercontent.com/a/ACg8ocKziqtKNJle5uskEOavYkhkTK2hfhgtOXdkup2oOk0h=k-s256",
+,                "display_name": "OP SHIVA",
+L                "link": "https://stackoverflow.com/users/23359177/op-shiva"
             },
 #            "badge_type": "named",
             "rank": "bronze",
@@ -1296,13 +1296,13 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 
         {
             "user": {
-(                "account_id": 30481092,
+(                "account_id": 30481911,
 !                "reputation": 1,
-%                "user_id": 23358594,
+%                "user_id": 23359231,
 +                "user_type": "registered",
-ç                "profile_image": "https://www.gravatar.com/avatar/9f60ca8fb8d5ae448911bd1bae2b56f0?s=256&d=identicon&r=PG&f=y&so-version=2",
-+                "display_name": "Zifadul",
-K                "link": "https://stackoverflow.com/users/23358594/zifadul"
+ç                "profile_image": "https://www.gravatar.com/avatar/1c91bd869dbc625534c1b60d22427954?s=256&d=identicon&r=PG&f=y&so-version=2",
+.                "display_name": "Muhd Salis",
+N                "link": "https://stackoverflow.com/users/23359231/muhd-salis"
             },
 #            "badge_type": "named",
             "rank": "bronze",
@@ -1313,64 +1313,13 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 
         {
             "user": {
-(                "account_id": 30481088,
+(                "account_id": 30393451,
 !                "reputation": 1,
-%                "user_id": 23358591,
+%                "user_id": 23359236,
 +                "user_type": "registered",
-R                "profile_image": "https://i.stack.imgur.com/lQ1XJ.jpg?s=256&g=1",
-.                "display_name": "Anil Kumar",
-N                "link": "https://stackoverflow.com/users/23358591/anil-kumar"
-            },
-#            "badge_type": "named",
-            "rank": "bronze",
-            "badge_id": 2600,
-F            "link": "https://stackoverflow.com/badges/2600/informed",
-            "name": "Informed"
-        },
-
-        {
-            "user": {
-(                "account_id": 25526845,
-!                "reputation": 1,
-%                "user_id": 19315750,
-+                "user_type": "registered",
-}                "profile_image": "https://lh3.googleusercontent.com/a-/AOh14Gg1k9iWxbN1EpTtpr_E9xMF8ZuZvNPQMkUVrtTc=k-s256",
--                "display_name": "wooblydog",
-M                "link": "https://stackoverflow.com/users/19315750/wooblydog"
-            },
-#            "badge_type": "named",
-            "rank": "bronze",
-            "badge_id": 2600,
-F            "link": "https://stackoverflow.com/badges/2600/informed",
-            "name": "Informed"
-        },
-
-        {
-            "user": {
-(                "account_id": 30481073,
-!                "reputation": 1,
-%                "user_id": 23358577,
-+                "user_type": "registered",
-Ä                "profile_image": "https://lh3.googleusercontent.com/a/ACg8ocKgzgYzMhzA6uYOqv1I9BXGr3goaYEjQeD_YRyI7sJd=k-s256",
-/                "display_name": "Pratik Naik",
-O                "link": "https://stackoverflow.com/users/23358577/pratik-naik"
-            },
-#            "badge_type": "named",
-            "rank": "bronze",
-            "badge_id": 2600,
-F            "link": "https://stackoverflow.com/badges/2600/informed",
-            "name": "Informed"
-        },
-
-        {
-            "user": {
-'                "account_id": 9628531,
-"                "reputation": 13,
-$                "user_id": 7147339,
-+                "user_type": "registered",
-ç                "profile_image": "https://www.gravatar.com/avatar/9390542b84d3922e6ae60158f89d3da0?s=256&d=identicon&r=PG&f=y&so-version=2",
-(                "display_name": "MARK",
-G                "link": "https://stackoverflow.com/users/7147339/mark"
+R                "profile_image": "https://i.stack.imgur.com/Xm7dc.jpg?s=256&g=1",
+.                "display_name": "Iyro Solar",
+N                "link": "https://stackoverflow.com/users/23359236/iyro-solar"
             },
 #            "badge_type": "named",
             "rank": "bronze",
@@ -1381,13 +1330,13 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 
         {
             "user": {
-(                "account_id": 30429271,
+(                "account_id": 30481898,
 !                "reputation": 1,
-%                "user_id": 23358561,
+%                "user_id": 23359220,
 +                "user_type": "registered",
-ç                "profile_image": "https://www.gravatar.com/avatar/ac083150956cc24043ca391e627ea672?s=256&d=identicon&r=PG&f=y&so-version=2",
-3                "display_name": "softwin systems",
-S                "link": "https://stackoverflow.com/users/23358561/softwin-systems"
+|                "profile_image": "https://www.gravatar.com/avatar/8c4f35066a9792b1c804e1b1245f8e71?s=256&d=identicon&r=PG",
+0                "display_name": "Citron Tours",
+P                "link": "https://stackoverflow.com/users/23359220/citron-tours"
             },
 #            "badge_type": "named",
             "rank": "bronze",
@@ -1398,13 +1347,64 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 
         {
             "user": {
-(                "account_id": 30480751,
+(                "account_id": 30481877,
 !                "reputation": 1,
-%                "user_id": 23358330,
+%                "user_id": 23359215,
 +                "user_type": "registered",
-É                "profile_image": "https://lh3.googleusercontent.com/a/ACg8ocKPhvCKesM7OwbqMPRlv0kBZhEezjmVmEgUTlp-_pe-jwY=k-s256",
-(                "display_name": "SGSG",
-H                "link": "https://stackoverflow.com/users/23358330/sgsg"
+ç                "profile_image": "https://www.gravatar.com/avatar/97c0058e67bff9b07aefeaf2696709e8?s=256&d=identicon&r=PG&f=y&so-version=2",
+0                "display_name": "tocana lyzer",
+P                "link": "https://stackoverflow.com/users/23359215/tocana-lyzer"
+            },
+#            "badge_type": "named",
+            "rank": "bronze",
+            "badge_id": 9,
+I            "link": "https://stackoverflow.com/badges/9/autobiographer",
+%            "name": "Autobiographer"
+        },
+
+        {
+            "user": {
+(                "account_id": 30481808,
+!                "reputation": 1,
+%                "user_id": 23359146,
++                "user_type": "registered",
+ç                "profile_image": "https://www.gravatar.com/avatar/1967e9cc38d45d599a33701a78292437?s=256&d=identicon&r=PG&f=y&so-version=2",
+1                "display_name": "Vincent Power",
+Q                "link": "https://stackoverflow.com/users/23359146/vincent-power"
+            },
+#            "badge_type": "named",
+            "rank": "bronze",
+            "badge_id": 9,
+I            "link": "https://stackoverflow.com/badges/9/autobiographer",
+%            "name": "Autobiographer"
+        },
+
+        {
+            "user": {
+(                "account_id": 30481759,
+!                "reputation": 1,
+%                "user_id": 23359107,
++                "user_type": "registered",
+ç                "profile_image": "https://www.gravatar.com/avatar/84cf6b8bca37ff28b2c9318535bded1d?s=256&d=identicon&r=PG&f=y&so-version=2",
+5                "display_name": "Parsons Haagensen",
+U                "link": "https://stackoverflow.com/users/23359107/parsons-haagensen"
+            },
+#            "badge_type": "named",
+            "rank": "bronze",
+            "badge_id": 9,
+I            "link": "https://stackoverflow.com/badges/9/autobiographer",
+%            "name": "Autobiographer"
+        },
+
+        {
+            "user": {
+(                "account_id": 30476633,
+!                "reputation": 1,
+%                "user_id": 23355232,
++                "user_type": "registered",
+R                "profile_image": "https://i.stack.imgur.com/W1PUR.jpg?s=256&g=1",
+0                "display_name": "user23355232",
+P                "link": "https://stackoverflow.com/users/23355232/user23355232"
             },
 #            "badge_type": "named",
             "rank": "bronze",
@@ -1415,13 +1415,13 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 
         {
             "user": {
-(                "account_id": 30480919,
+(                "account_id": 18213766,
 !                "reputation": 1,
-%                "user_id": 23358455,
+%                "user_id": 13255768,
 +                "user_type": "registered",
-Ä                "profile_image": "https://lh3.googleusercontent.com/a/ACg8ocJetXt2cJmLq9zgSS0yTJMNHhlGrvytQXTMOjcZtdha=k-s256",
-2                "display_name": "Stephen Chrzan",
-R                "link": "https://stackoverflow.com/users/23358455/stephen-chrzan"
+ç                "profile_image": "https://www.gravatar.com/avatar/13746be09d5173b2e935b69a24bfcda5?s=256&d=identicon&r=PG&f=y&so-version=2",
+5                "display_name": "Manish Kahodariya",
+U                "link": "https://stackoverflow.com/users/13255768/manish-kahodariya"
             },
 #            "badge_type": "named",
             "rank": "bronze",
@@ -1432,13 +1432,133 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 
         {
             "user": {
-(                "account_id": 11755210,
-"                "reputation": 97,
-$                "user_id": 8603123,
+(                "account_id": 29546864,
+!                "reputation": 1,
+%                "user_id": 22644405,
 +                "user_type": "registered",
-à                "profile_image": "https://lh4.googleusercontent.com/--Anwppddgu0/AAAAAAAAAAI/AAAAAAAAABE/54hlyNsV8aw/photo.jpg?sz=256",
-0                "display_name": "kiran girase",
-O                "link": "https://stackoverflow.com/users/8603123/kiran-girase"
+ç                "profile_image": "https://www.gravatar.com/avatar/cd19e4ef3a6ac6e8b26e73e37f2deaf6?s=256&d=identicon&r=PG&f=y&so-version=2",
+)                "display_name": "Bl4k3",
+I                "link": "https://stackoverflow.com/users/22644405/bl4k3"
+            },
+#            "badge_type": "named",
+            "rank": "bronze",
+            "badge_id": 3,
+A            "link": "https://stackoverflow.com/badges/3/editor",
+            "name": "Editor"
+        },
+
+        {
+            "user": {
+'                "account_id": 2940217,
+$                "reputation": 9279,
+$                "user_id": 2518285,
++                "user_type": "registered",
+R                "profile_image": "https://i.stack.imgur.com/sETWZ.jpg?s=256&g=1",
+0                "display_name": "Brett Donald",
+O                "link": "https://stackoverflow.com/users/2518285/brett-donald"
+            },
+#            "badge_type": "named",
+            "rank": "silver",
+            "badge_id": 17,
+G            "link": "https://stackoverflow.com/badges/17/necromancer",
+"            "name": "Necromancer"
+        },
+
+        {
+            "user": {
+'                "account_id": 4933250,
+$                "reputation": 4909,
+$                "user_id": 3972291,
++                "user_type": "registered",
+$                "accept_rate": 100,
+R                "profile_image": "https://i.stack.imgur.com/2W0Iz.jpg?s=256&g=1",
+0                "display_name": "Enamul Haque",
+O                "link": "https://stackoverflow.com/users/3972291/enamul-haque"
+            },
+#            "badge_type": "named",
+            "rank": "silver",
+            "badge_id": 17,
+G            "link": "https://stackoverflow.com/badges/17/necromancer",
+"            "name": "Necromancer"
+        },
+
+        {
+            "user": {
+(                "account_id": 11898682,
+$                "reputation": 1511,
+$                "user_id": 8733066,
++                "user_type": "registered",
+à                "profile_image": "https://lh4.googleusercontent.com/-qa3Wd9oo7MA/AAAAAAAAAAI/AAAAAAAACOo/KW8DPGJLEXs/photo.jpg?sz=256",
+-                "display_name": "bb1950328",
+L                "link": "https://stackoverflow.com/users/8733066/bb1950328"
+            },
+#            "badge_type": "named",
+            "rank": "silver",
+            "badge_id": 17,
+G            "link": "https://stackoverflow.com/badges/17/necromancer",
+"            "name": "Necromancer"
+        },
+
+        {
+            "user": {
+(                "account_id": 12973040,
+$                "reputation": 2004,
+$                "user_id": 9378077,
++                "user_type": "registered",
+R                "profile_image": "https://i.stack.imgur.com/H9X2I.jpg?s=256&g=1",
+1                "display_name": "AH.Pooladvand",
+P                "link": "https://stackoverflow.com/users/9378077/ah-pooladvand"
+            },
+#            "badge_type": "named",
+            "rank": "silver",
+            "badge_id": 17,
+G            "link": "https://stackoverflow.com/badges/17/necromancer",
+"            "name": "Necromancer"
+        },
+
+        {
+            "user": {
+(                "account_id": 14373142,
+"                "reputation": 73,
+%                "user_id": 10382334,
++                "user_type": "registered",
+ç                "profile_image": "https://www.gravatar.com/avatar/9cb7d12971a1116d96de8c077f47914e?s=256&d=identicon&r=PG&f=y&so-version=2",
+1                "display_name": "noobsterCoder",
+Q                "link": "https://stackoverflow.com/users/10382334/noobstercoder"
+            },
+#            "badge_type": "named",
+            "rank": "silver",
+            "badge_id": 17,
+G            "link": "https://stackoverflow.com/badges/17/necromancer",
+"            "name": "Necromancer"
+        },
+
+        {
+            "user": {
+(                "account_id": 12903696,
+"                "reputation": 19,
+$                "user_id": 9331628,
++                "user_type": "registered",
+ç                "profile_image": "https://www.gravatar.com/avatar/02e28fda9e934cabbe534188910c6ddd?s=256&d=identicon&r=PG&f=y&so-version=2",
++                "display_name": "momoman",
+J                "link": "https://stackoverflow.com/users/9331628/momoman"
+            },
+#            "badge_type": "named",
+            "rank": "bronze",
+            "badge_id": 38,
+I            "link": "https://stackoverflow.com/badges/38/peer-pressure",
+$            "name": "Peer Pressure"
+        },
+
+        {
+            "user": {
+(                "account_id": 14771591,
+"                "reputation": 37,
+%                "user_id": 10667884,
++                "user_type": "registered",
+ç                "profile_image": "https://www.gravatar.com/avatar/bc0601ab10ef1abc29a68f352f5aeac1?s=256&d=identicon&r=PG&f=y&so-version=2",
+,                "display_name": "F.Dunbar",
+L                "link": "https://stackoverflow.com/users/10667884/f-dunbar"
             },
 #            "badge_type": "named",
             "rank": "bronze",
@@ -1449,169 +1569,13 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 
         {
             "user": {
-(                "account_id": 17807940,
-"                "reputation": 33,
-%                "user_id": 12933240,
-+                "user_type": "registered",
-ç                "profile_image": "https://www.gravatar.com/avatar/91dee11853d6a239eb5686993f3f38a6?s=256&d=identicon&r=PG&f=y&so-version=2",
-+                "display_name": "elafito",
-K                "link": "https://stackoverflow.com/users/12933240/elafito"
-            },
-#            "badge_type": "named",
-            "rank": "bronze",
-            "badge_id": 26,
-L            "link": "https://stackoverflow.com/badges/26/popular-question",
-'            "name": "Popular Question"
-        },
-
-        {
-            "user": {
-(                "account_id": 15159703,
-$                "reputation": 1255,
-%                "user_id": 11092881,
-+                "user_type": "registered",
-|                "profile_image": "https://www.gravatar.com/avatar/4cd7bff435b19b5d83ad4e661fe6a0d2?s=256&d=identicon&r=PG",
-+                "display_name": "Sayaman",
-K                "link": "https://stackoverflow.com/users/11092881/sayaman"
-            },
-#            "badge_type": "named",
-            "rank": "bronze",
-            "badge_id": 26,
-L            "link": "https://stackoverflow.com/badges/26/popular-question",
-'            "name": "Popular Question"
-        },
-
-        {
-            "user": {
-(                "account_id": 10708217,
-$                "reputation": 2029,
-$                "user_id": 7881234,
-+                "user_type": "registered",
-ç                "profile_image": "https://www.gravatar.com/avatar/45969bca4cac3d70019d9f8f20cfca70?s=256&d=identicon&r=PG&f=y&so-version=2",
-+                "display_name": "doobean",
-J                "link": "https://stackoverflow.com/users/7881234/doobean"
-            },
-#            "badge_type": "named",
-            "rank": "bronze",
-            "badge_id": 26,
-L            "link": "https://stackoverflow.com/badges/26/popular-question",
-'            "name": "Popular Question"
-        },
-
-        {
-            "user": {
-'                "account_id": 4129227,
-#                "reputation": 611,
-$                "user_id": 3387542,
-+                "user_type": "registered",
-#                "accept_rate": 75,
-ç                "profile_image": "https://www.gravatar.com/avatar/142a29b33fc25d8c730f7b761482328f?s=256&d=identicon&r=PG&f=y&so-version=2",
-/                "display_name": "user3387542",
-N                "link": "https://stackoverflow.com/users/3387542/user3387542"
-            },
-#            "badge_type": "named",
-            "rank": "bronze",
-            "badge_id": 26,
-L            "link": "https://stackoverflow.com/badges/26/popular-question",
-'            "name": "Popular Question"
-        },
-
-        {
-            "user": {
-'                "account_id": 2590908,
-#                "reputation": 849,
-$                "user_id": 2245633,
-+                "user_type": "registered",
-#                "accept_rate": 18,
-R                "profile_image": "https://i.stack.imgur.com/SLpQK.gif?s=256&g=1",
-/                "display_name": "CodeGorilla",
-N                "link": "https://stackoverflow.com/users/2245633/codegorilla"
-            },
-#            "badge_type": "named",
-            "rank": "bronze",
-            "badge_id": 26,
-L            "link": "https://stackoverflow.com/badges/26/popular-question",
-'            "name": "Popular Question"
-        },
-
-        {
-            "user": {
-(                "account_id": 13096876,
-"                "reputation": 17,
-$                "user_id": 9791040,
-+                "user_type": "registered",
-ç                "profile_image": "https://www.gravatar.com/avatar/5f6e44cce14566026d05cfc3ba6c1bb2?s=256&d=identicon&r=PG&f=y&so-version=2",
-/                "display_name": "Marc Sharma",
-N                "link": "https://stackoverflow.com/users/9791040/marc-sharma"
-            },
-#            "badge_type": "named",
-            "rank": "bronze",
-            "badge_id": 26,
-L            "link": "https://stackoverflow.com/badges/26/popular-question",
-'            "name": "Popular Question"
-        },
-
-        {
-            "user": {
-(                "account_id": 10447347,
-"                "reputation": 77,
-$                "user_id": 7702004,
-+                "user_type": "registered",
-ç                "profile_image": "https://www.gravatar.com/avatar/18d2e6ef5ad221dc42174730e6bada67?s=256&d=identicon&r=PG&f=y&so-version=2",
--                "display_name": "Mahesh cm",
-L                "link": "https://stackoverflow.com/users/7702004/mahesh-cm"
-            },
-#            "badge_type": "named",
-            "rank": "bronze",
-            "badge_id": 26,
-L            "link": "https://stackoverflow.com/badges/26/popular-question",
-'            "name": "Popular Question"
-        },
-
-        {
-            "user": {
-(                "account_id": 25102417,
-"                "reputation": 13,
-%                "user_id": 18952978,
-+                "user_type": "registered",
-|                "profile_image": "https://www.gravatar.com/avatar/98af7dbbe5980624606c5d16ee3abbdd?s=256&d=identicon&r=PG",
-(                "display_name": "jesu",
-H                "link": "https://stackoverflow.com/users/18952978/jesu"
-            },
-#            "badge_type": "named",
-            "rank": "bronze",
-            "badge_id": 26,
-L            "link": "https://stackoverflow.com/badges/26/popular-question",
-'            "name": "Popular Question"
-        },
-
-        {
-            "user": {
-'                "account_id": 1967050,
-$                "reputation": 5019,
-$                "user_id": 1767006,
-+                "user_type": "registered",
-#                "accept_rate": 81,
-|                "profile_image": "https://www.gravatar.com/avatar/33a323193535eac49f2acdad69e44dfa?s=256&d=identicon&r=PG",
--                "display_name": "RandomGuy",
-L                "link": "https://stackoverflow.com/users/1767006/randomguy"
-            },
-#            "badge_type": "named",
-            "rank": "bronze",
-            "badge_id": 26,
-L            "link": "https://stackoverflow.com/badges/26/popular-question",
-'            "name": "Popular Question"
-        },
-
-        {
-            "user": {
-(                "account_id": 21918179,
+(                "account_id": 17805632,
 "                "reputation": 65,
-%                "user_id": 17122431,
+%                "user_id": 12931407,
 +                "user_type": "registered",
-|                "profile_image": "https://www.gravatar.com/avatar/369451481a01c6081dd940b4116c879d?s=256&d=identicon&r=PG",
-(                "display_name": "Paul",
-H                "link": "https://stackoverflow.com/users/17122431/paul"
+                "profile_image": "https://lh3.googleusercontent.com/a-/AAuE7mAvHkhZ-imfvbX8hxeLGRlscF3QdbBgUj390FhxUQ=k-s256",
+6                "display_name": "Stefan Mihajloviƒá",
+Z                "link": "https://stackoverflow.com/users/12931407/stefan-mihajlovi%c4%87"
             },
 #            "badge_type": "named",
             "rank": "bronze",
@@ -1622,13 +1586,13 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 
         {
             "user": {
-'                "account_id": 1764923,
-"                "reputation": 29,
-$                "user_id": 1610993,
+(                "account_id": 20785514,
+#                "reputation": 137,
+%                "user_id": 15264820,
 +                "user_type": "registered",
-|                "profile_image": "https://www.gravatar.com/avatar/b58f2b90e152a1da689823e996daeeb4?s=256&d=identicon&r=PG",
--                "display_name": "i.calixto",
-L                "link": "https://stackoverflow.com/users/1610993/i-calixto"
+R                "profile_image": "https://i.stack.imgur.com/mDsxh.jpg?s=256&g=1",
+7                "display_name": "Vidushika Dasanayka",
+W                "link": "https://stackoverflow.com/users/15264820/vidushika-dasanayka"
             },
 #            "badge_type": "named",
             "rank": "bronze",
@@ -1639,163 +1603,202 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 
         {
             "user": {
-(                "account_id": 23809895,
-"                "reputation": 21,
-%                "user_id": 17818822,
+&                "account_id": 258291,
+#                "reputation": 793,
+#                "user_id": 540370,
 +                "user_type": "registered",
-|                "profile_image": "https://www.gravatar.com/avatar/21e4e9d7e290d2b66fe8a5f689fe25fb?s=256&d=identicon&r=PG",
-.                "display_name": "eliasbauer",
-N                "link": "https://stackoverflow.com/users/17818822/eliasbauer"
+R                "profile_image": "https://i.stack.imgur.com/E0RDe.jpg?s=256&g=1",
+-                "display_name": "gianpaolo",
+K                "link": "https://stackoverflow.com/users/540370/gianpaolo"
             },
 #            "badge_type": "named",
             "rank": "bronze",
-            "badge_id": 2,
-B            "link": "https://stackoverflow.com/badges/2/student",
-            "name": "Student"
+            "badge_id": 26,
+L            "link": "https://stackoverflow.com/badges/26/popular-question",
+'            "name": "Popular Question"
         },
 
         {
             "user": {
-(                "account_id": 29260584,
-"                "reputation": 17,
-%                "user_id": 22417655,
+(                "account_id": 24128441,
+!                "reputation": 3,
+%                "user_id": 18096367,
 +                "user_type": "registered",
-Ä                "profile_image": "https://lh3.googleusercontent.com/a/AAcHTtfIhtiLuew09OH5VX0TU2wxs5xwVIhp9sqJBxYlV5ds=k-s256",
-/                "display_name": "Christopher",
-O                "link": "https://stackoverflow.com/users/22417655/christopher"
+                "profile_image": "https://lh3.googleusercontent.com/a-/AOh14GicuL0LSiPP0tV8jI_xwPqopqfWVl5lN51fJN9_pA=k-s256",
+,                "display_name": "i carvin",
+L                "link": "https://stackoverflow.com/users/18096367/i-carvin"
             },
 #            "badge_type": "named",
             "rank": "bronze",
-            "badge_id": 2,
-B            "link": "https://stackoverflow.com/badges/2/student",
-            "name": "Student"
+            "badge_id": 26,
+L            "link": "https://stackoverflow.com/badges/26/popular-question",
+'            "name": "Popular Question"
         },
 
         {
             "user": {
-(                "account_id": 15562287,
+&                "account_id": 303471,
+%                "reputation": 11564,
+#                "user_id": 612428,
++                "user_type": "registered",
+#                "accept_rate": 56,
+ç                "profile_image": "https://www.gravatar.com/avatar/31c9b729e9a4d9b8362b32f57c758766?s=256&d=identicon&r=PG&f=y&so-version=2",
++                "display_name": "Lanston",
+I                "link": "https://stackoverflow.com/users/612428/lanston"
+            },
+#            "badge_type": "named",
+            "rank": "bronze",
+            "badge_id": 26,
+L            "link": "https://stackoverflow.com/badges/26/popular-question",
+'            "name": "Popular Question"
+        },
+
+        {
+            "user": {
+'                "account_id": 8135427,
+$                "reputation": 3139,
+$                "user_id": 6127225,
++                "user_type": "registered",
+#                "accept_rate": 48,
+R                "profile_image": "https://i.stack.imgur.com/4xYkH.jpg?s=256&g=1",
+0                "display_name": "Ryan Cocuzzo",
+O                "link": "https://stackoverflow.com/users/6127225/ryan-cocuzzo"
+            },
+#            "badge_type": "named",
+            "rank": "bronze",
+            "badge_id": 26,
+L            "link": "https://stackoverflow.com/badges/26/popular-question",
+'            "name": "Popular Question"
+        },
+
+        {
+            "user": {
+'                "account_id": 8968143,
+"                "reputation": 55,
+$                "user_id": 6687847,
++                "user_type": "registered",
+$                "accept_rate": 100,
+ç                "profile_image": "https://www.gravatar.com/avatar/162f5353326e7d02bd820c700ccdf27f?s=256&d=identicon&r=PG&f=y&so-version=2",
+*                "display_name": "geedee",
+I                "link": "https://stackoverflow.com/users/6687847/geedee"
+            },
+#            "badge_type": "named",
+            "rank": "bronze",
+            "badge_id": 26,
+L            "link": "https://stackoverflow.com/badges/26/popular-question",
+'            "name": "Popular Question"
+        },
+
+        {
+            "user": {
+'                "account_id": 4199716,
+#                "reputation": 823,
+$                "user_id": 3440145,
++                "user_type": "registered",
+#                "accept_rate": 58,
+ç                "profile_image": "https://www.gravatar.com/avatar/eb19e3923901dce343d4abd86cd06680?s=256&d=identicon&r=PG&f=y&so-version=2",
+/                "display_name": "user3440145",
+N                "link": "https://stackoverflow.com/users/3440145/user3440145"
+            },
+#            "badge_type": "named",
+            "rank": "bronze",
+            "badge_id": 26,
+L            "link": "https://stackoverflow.com/badges/26/popular-question",
+'            "name": "Popular Question"
+        },
+
+        {
+            "user": {
+'                "account_id": 5279636,
+"                "reputation": 27,
+$                "user_id": 4215430,
++                "user_type": "registered",
+"                "accept_rate": 0,
+ç                "profile_image": "https://www.gravatar.com/avatar/3f61d134c0caea406a09489305db0c81?s=256&d=identicon&r=PG&f=y&so-version=2",
+/                "display_name": "user4215430",
+N                "link": "https://stackoverflow.com/users/4215430/user4215430"
+            },
+#            "badge_type": "named",
+            "rank": "bronze",
+            "badge_id": 26,
+L            "link": "https://stackoverflow.com/badges/26/popular-question",
+'            "name": "Popular Question"
+        },
+
+        {
+            "user": {
+'                "account_id": 1071286,
+"                "reputation": 85,
+$                "user_id": 1070483,
++                "user_type": "registered",
+$                "accept_rate": 100,
+R                "profile_image": "https://i.stack.imgur.com/VhsDT.png?s=256&g=1",
+/                "display_name": "brandonio21",
+N                "link": "https://stackoverflow.com/users/1070483/brandonio21"
+            },
+#            "badge_type": "named",
+            "rank": "bronze",
+            "badge_id": 26,
+L            "link": "https://stackoverflow.com/badges/26/popular-question",
+'            "name": "Popular Question"
+        },
+
+        {
+            "user": {
+(                "account_id": 12684169,
+"                "reputation": 59,
+$                "user_id": 9216647,
++                "user_type": "registered",
+d                "profile_image": "https://graph.facebook.com/10215033441444440/picture?type=large",
+3                "display_name": "Martin Skovmand",
+R                "link": "https://stackoverflow.com/users/9216647/martin-skovmand"
+            },
+#            "badge_type": "named",
+            "rank": "bronze",
+            "badge_id": 26,
+L            "link": "https://stackoverflow.com/badges/26/popular-question",
+'            "name": "Popular Question"
+        },
+
+        {
+            "user": {
+'                "account_id": 1394768,
+$                "reputation": 1864,
+$                "user_id": 1324765,
++                "user_type": "registered",
+#                "accept_rate": 46,
+|                "profile_image": "https://www.gravatar.com/avatar/49dbfd8834d69e780c017b8dc9e391e0?s=256&d=identicon&r=PG",
+*                "display_name": "ZelelB",
+I                "link": "https://stackoverflow.com/users/1324765/zelelb"
+            },
+#            "badge_type": "named",
+            "rank": "bronze",
+            "badge_id": 26,
+L            "link": "https://stackoverflow.com/badges/26/popular-question",
+'            "name": "Popular Question"
+        },
+
+        {
+            "user": {
+(                "account_id": 29033737,
 "                "reputation": 13,
-%                "user_id": 11227114,
+%                "user_id": 22240105,
 +                "user_type": "registered",
-ç                "profile_image": "https://www.gravatar.com/avatar/6f75dd1f3fb30a20779aab27a2377f56?s=256&d=identicon&r=PG&f=y&so-version=2",
-,                "display_name": "ogre9000",
-L                "link": "https://stackoverflow.com/users/11227114/ogre9000"
+Ä                "profile_image": "https://lh3.googleusercontent.com/a/AAcHTtdikVXKJ2hgH8wiYsH8HgVZCx1tOJBhpDZ2Rk_IkBGa=k-s256",
+4                "display_name": "Arman TabibZadeh",
+T                "link": "https://stackoverflow.com/users/22240105/arman-tabibzadeh"
             },
 #            "badge_type": "named",
             "rank": "bronze",
-            "badge_id": 2,
-B            "link": "https://stackoverflow.com/badges/2/student",
-            "name": "Student"
-        },
-
-        {
-            "user": {
-(                "account_id": 30480721,
-"                "reputation": 11,
-%                "user_id": 23358305,
-+                "user_type": "registered",
-Ç                "profile_image": "https://lh3.googleusercontent.com/a/ACg8ocLgXaGfCpz7ntmI6ZEd5SFXGxeZXnrVn1LNUxKfuW3wBQ=k-s256",
-3                "display_name": "Mauro Bocanegra",
-S                "link": "https://stackoverflow.com/users/23358305/mauro-bocanegra"
-            },
-#            "badge_type": "named",
-            "rank": "bronze",
-            "badge_id": 2,
-B            "link": "https://stackoverflow.com/badges/2/student",
-            "name": "Student"
-        },
-
-        {
-            "user": {
-(                "account_id": 29260584,
-"                "reputation": 17,
-%                "user_id": 22417655,
-+                "user_type": "registered",
-Ä                "profile_image": "https://lh3.googleusercontent.com/a/AAcHTtfIhtiLuew09OH5VX0TU2wxs5xwVIhp9sqJBxYlV5ds=k-s256",
-/                "display_name": "Christopher",
-O                "link": "https://stackoverflow.com/users/22417655/christopher"
-            },
-#            "badge_type": "named",
-            "rank": "bronze",
-            "badge_id": 6,
-D            "link": "https://stackoverflow.com/badges/6/supporter",
-             "name": "Supporter"
-        },
-
-        {
-            "user": {
-(                "account_id": 21689925,
-"                "reputation": 48,
-%                "user_id": 16004667,
-+                "user_type": "registered",
-}                "profile_image": "https://lh3.googleusercontent.com/a-/AOh14Gg3ExHbqGdXxUauNavLSHL-8nI5iQn8AuvjLRcu=k-s256",
-2                "display_name": "Avishka Perera",
-R                "link": "https://stackoverflow.com/users/16004667/avishka-perera"
-            },
-#            "badge_type": "named",
-            "rank": "bronze",
-            "badge_id": 6,
-D            "link": "https://stackoverflow.com/badges/6/supporter",
-             "name": "Supporter"
-        },
-
-        {
-            "user": {
-'                "account_id": 1844775,
-%                "reputation": 10874,
-$                "user_id": 1673376,
-+                "user_type": "registered",
-#                "accept_rate": 65,
-|                "profile_image": "https://www.gravatar.com/avatar/64ba24b6800eafa4a85622c97edf8051?s=256&d=identicon&r=PG",
-*                "display_name": "zloctb",
-I                "link": "https://stackoverflow.com/users/1673376/zloctb"
-            },
-#            "badge_type": "named",
-            "rank": "bronze",
-            "badge_id": 23,
-G            "link": "https://stackoverflow.com/badges/23/nice-answer",
-"            "name": "Nice Answer"
-        },
-
-        {
-            "user": {
-$                "account_id": 9193,
-&                "reputation": 343647,
-"                "user_id": 16883,
-+                "user_type": "registered",
-#                "accept_rate": 83,
-|                "profile_image": "https://www.gravatar.com/avatar/0382297f273df0a544b0c6c2734de096?s=256&d=identicon&r=PG",
-5                "display_name": "Michael Borgwardt",
-R                "link": "https://stackoverflow.com/users/16883/michael-borgwardt"
-            },
-#            "badge_type": "named",
-            "rank": "silver",
-            "badge_id": 24,
-G            "link": "https://stackoverflow.com/badges/24/good-answer",
-"            "name": "Good Answer"
-        },
-
-        {
-            "user": {
-(                "account_id": 13770793,
-%                "reputation": 26499,
-$                "user_id": 9938317,
-+                "user_type": "registered",
-ç                "profile_image": "https://www.gravatar.com/avatar/1da6c491ff1592bb1fe4f57d9ad1c840?s=256&d=identicon&r=PG&f=y&so-version=2",
-)                "display_name": "rioV8",
-H                "link": "https://stackoverflow.com/users/9938317/riov8"
-            },
-#            "badge_type": "named",
-            "rank": "silver",
-            "badge_id": 24,
-G            "link": "https://stackoverflow.com/badges/24/good-answer",
-"            "name": "Good Answer"
+            "badge_id": 10,
+C            "link": "https://stackoverflow.com/badges/10/scholar",
+            "name": "Scholar"
 
         }
     ],
     "has_more": true,
     "quota_max": 300,
-    "quota_remaining": 288
+    "quota_remaining": 269
 }
 
 ¡  Given user call the get endpoint to get badges "ALL" for 'recipients' # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
@@ -1803,7 +1806,7 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 
 @BadgesAPI @HappyPath
 àScenario Outline: Get badges recently awarded on the site.              # src/test/resources/cucumber.features/GetRecipients.feature:11
-±07-02-2024 12:11:16.114 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [2693d8b9-eb87-41e5-b2de-49c5caf9e0dc] ##
+±07-02-2024 14:45:37.282 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [d29a340a-0953-417a-882d-b24c776dd988] ##
 Request method:	GET
 YRequest path:	https://api.stackexchange.com/2.3/badges/263/recipients?site=stackoverflow
 Request params:	<none>
@@ -1811,10 +1814,10 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 Path params:	<none>
 Headers:		Accept=*/*
 Body:			<none>
-≥07-02-2024 12:11:16.122 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [2693d8b9-eb87-41e5-b2de-49c5caf9e0dc] ##
+≥07-02-2024 14:45:37.290 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [d29a340a-0953-417a-882d-b24c776dd988] ##
 HTTP/1.1 200 OK
 cache-control: private
-content-length: 2195
+content-length: 2198
 .content-type: application/json; charset=utf-8
 content-encoding: gzip
 ,strict-transport-security: max-age=15552000
@@ -1822,11 +1825,11 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 (access-control-allow-methods: GET, POST
 (access-control-allow-credentials: false
  x-content-type-options: nosniff
-5x-request-guid: 941d6626-9c13-4973-bd01-8436609ab59e
-°set-cookie: prov=a909546c-ef70-4918-99d0-afcda5de35c0; expires=Fri, 07 Feb 2025 06:41:15 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+5x-request-guid: 1e4b44c7-9a66-4083-bfe0-6c0d0419a6a7
+°set-cookie: prov=bbe733d6-3651-404d-963a-16af90500178; expires=Fri, 07 Feb 2025 09:15:37 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
 econtent-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
-$date: Wed, 07 Feb 2024 06:41:15 GMT
-vprov=a909546c-ef70-4918-99d0-afcda5de35c0;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+$date: Wed, 07 Feb 2024 09:15:37 GMT
+vprov=bbe733d6-3651-404d-963a-16af90500178;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 09:15{
     "items": [
 
         {
@@ -2042,7 +2045,7 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
         {
             "user": {
 %                "account_id": 34424,
-&                "reputation": 290386,
+&                "reputation": 290396,
 "                "user_id": 97337,
 +                "user_type": "registered",
 $                "accept_rate": 100,
@@ -2304,7 +2307,7 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
         {
             "user": {
 %                "account_id": 11683,
-'                "reputation": 1447238,
+'                "reputation": 1447248,
 "                "user_id": 22656,
 +                "user_type": "registered",
 #                "accept_rate": 86,
@@ -2358,15 +2361,15 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
     ],
     "has_more": true,
     "quota_max": 300,
-    "quota_remaining": 287
+    "quota_remaining": 268
 }
 
 ¡  Given user call the get endpoint to get badges "263" for 'recipients' # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
 •  Then user receive a 200 HTTP response                                 # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
 
 @BadgesAPI @UnhappyPath
-ûScenario Outline: To verify get badges endpoint returns error response for incorrect badge id # src/test/resources/cucumber.features/GetRecipients.feature:20
-±07-02-2024 12:11:17.875 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [a81cfeeb-7d52-49d2-94ed-749a8b778eb0] ##
+≠Scenario Outline: To verify get badges endpoint returns error response for incorrect badge id for recipients # src/test/resources/cucumber.features/GetRecipients.feature:20
+±07-02-2024 14:45:38.932 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [1e49cae6-5c30-45b5-b2dd-e0f948aa2224] ##
 Request method:	GET
 [Request path:	https://api.stackexchange.com/2.3/badges/101rf/recipients?site=stackoverflow
 Request params:	<none>
@@ -2374,7 +2377,7 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 Path params:	<none>
 Headers:		Accept=*/*
 Body:			<none>
-≥07-02-2024 12:11:17.877 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [a81cfeeb-7d52-49d2-94ed-749a8b778eb0] ##
+≥07-02-2024 14:45:38.934 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [1e49cae6-5c30-45b5-b2dd-e0f948aa2224] ##
 HTTP/1.1 400 Bad Request
 cache-control: private
 content-length: 97
@@ -2388,22 +2391,22 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 (access-control-allow-methods: GET, POST
 (access-control-allow-credentials: false
  x-content-type-options: nosniff
-5x-request-guid: edddcc0b-fa05-4121-a606-94b34c72d3bb
-°set-cookie: prov=c26cdee9-3c78-4e9a-8254-b416ae4b4258; expires=Fri, 07 Feb 2025 06:41:17 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+5x-request-guid: 0b1e4e0f-fd6b-41ab-8816-3c9d78ed1e2a
+°set-cookie: prov=175acd64-99ba-432d-bbbd-2a11920fd04f; expires=Fri, 07 Feb 2025 09:15:38 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
 econtent-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
-$date: Wed, 07 Feb 2024 06:41:17 GMT
-vprov=c26cdee9-3c78-4e9a-8254-b416ae4b4258;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+$date: Wed, 07 Feb 2024 09:15:38 GMT
+vprov=175acd64-99ba-432d-bbbd-2a11920fd04f;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 09:15{
     "error_id": 404,
 7    "error_message": "no method found with this name",
     "error_name": "no_method"
 }
 
-◊  Given user call the get endpoint to get badges "101rf" for 'recipients'                     # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
-ª  Then user receive a 400 HTTP response                                                       # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
+Ê  Given user call the get endpoint to get badges "101rf" for 'recipients'                                    # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
+   Then user receive a 400 HTTP response                                                                      # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
 
 @BadgesAPI @UnhappyPath
-ûScenario Outline: To verify get badges endpoint returns error response for incorrect badge id # src/test/resources/cucumber.features/GetRecipients.feature:21
-±07-02-2024 12:11:19.462 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [d7ebe155-fffa-49b1-81e0-ae439738b53a] ##
+≠Scenario Outline: To verify get badges endpoint returns error response for incorrect badge id for recipients # src/test/resources/cucumber.features/GetRecipients.feature:21
+±07-02-2024 14:45:40.559 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [0e5deff7-a018-428d-b0ec-bcefd8195be6] ##
 Request method:	GET
 ZRequest path:	https://api.stackexchange.com/2.3/badges%2F%2Frecipients?site=stackoverflow
 Request params:	<none>
@@ -2411,7 +2414,7 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 Path params:	<none>
 Headers:		Accept=*/*
 Body:			<none>
-≥07-02-2024 12:11:19.466 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [d7ebe155-fffa-49b1-81e0-ae439738b53a] ##
+≥07-02-2024 14:45:40.566 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [0e5deff7-a018-428d-b0ec-bcefd8195be6] ##
 HTTP/1.1 400 Bad Request
 cache-control: private
 content-length: 97
@@ -2425,22 +2428,22 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 (access-control-allow-methods: GET, POST
 (access-control-allow-credentials: false
  x-content-type-options: nosniff
-5x-request-guid: 7bd15758-dead-4d7f-8c2b-f0c670b492f6
-°set-cookie: prov=b024caec-9571-48d0-bda1-362ef4ac50df; expires=Fri, 07 Feb 2025 06:41:19 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+5x-request-guid: c39acab7-82a3-4319-91a5-db8b551c51f1
+°set-cookie: prov=16c7b08b-6b29-43ec-8b78-92bc5b419e7a; expires=Fri, 07 Feb 2025 09:15:40 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
 econtent-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
-$date: Wed, 07 Feb 2024 06:41:18 GMT
-vprov=b024caec-9571-48d0-bda1-362ef4ac50df;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+$date: Wed, 07 Feb 2024 09:15:40 GMT
+vprov=16c7b08b-6b29-43ec-8b78-92bc5b419e7a;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 09:15{
     "error_id": 404,
 7    "error_message": "no method found with this name",
     "error_name": "no_method"
 }
 
-◊  Given user call the get endpoint to get badges "" for 'recipients'                          # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
-ª  Then user receive a 400 HTTP response                                                       # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
+Ê  Given user call the get endpoint to get badges "" for 'recipients'                                         # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
+   Then user receive a 400 HTTP response                                                                      # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
 
 @BadgesAPI @UnhappyPath
-ûScenario Outline: To verify get badges endpoint returns error response for incorrect badge id # src/test/resources/cucumber.features/GetRecipients.feature:32
-±07-02-2024 12:11:21.105 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [153d153c-7a52-4739-828c-2f98cdb1448a] ##
+≠Scenario Outline: To verify get badges endpoint returns error response for incorrect badge id for recipients # src/test/resources/cucumber.features/GetRecipients.feature:32
+±07-02-2024 14:45:42.313 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logRequest - ## Request details: [9e9e0eac-8442-4b4e-b14a-c84715f50095] ##
 Request method:	GET
 ^Request path:	https://api.stackexchange.com/2.3/badges/109%20tr/recipients?site=stackoverflow
 Request params:	<none>
@@ -2448,7 +2451,7 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 Path params:	<none>
 Headers:		Accept=*/*
 Body:			<none>
-≥07-02-2024 12:11:21.109 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [153d153c-7a52-4739-828c-2f98cdb1448a] ##
+≥07-02-2024 14:45:42.317 [35m[Test worker][0;39m [34mINFO [0;39m c.e.s.filter.RestAssuredLogFilter.logResponse - ## Response details: [9e9e0eac-8442-4b4e-b14a-c84715f50095] ##
 HTTP/1.1 400 Bad Request
 cache-control: private
 content-length: 97
@@ -2462,19 +2465,19 @@ vprov=13de35cc-3dd3-4ea8-9af2-99fce7b91266;Path=/;Domain=.stackexchange.com;Secu
 (access-control-allow-methods: GET, POST
 (access-control-allow-credentials: false
  x-content-type-options: nosniff
-5x-request-guid: 8478971a-ad9b-4a94-9910-e6473876c1b4
-°set-cookie: prov=f254cdc4-e02b-470b-8875-6a4cc40e9d38; expires=Fri, 07 Feb 2025 06:41:21 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
+5x-request-guid: 0bfb2bd1-54a0-4c70-9345-726b8d0ad284
+°set-cookie: prov=552f39f2-6389-4574-81b4-0e319b067f62; expires=Fri, 07 Feb 2025 09:15:42 GMT; domain=.stackexchange.com; path=/; secure; samesite=none; httponly
 econtent-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
-$date: Wed, 07 Feb 2024 06:41:20 GMT
-vprov=f254cdc4-e02b-470b-8875-6a4cc40e9d38;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 06:41{
+$date: Wed, 07 Feb 2024 09:15:42 GMT
+vprov=552f39f2-6389-4574-81b4-0e319b067f62;Path=/;Domain=.stackexchange.com;Secure;HttpOnly;Expires=07/02/2025, 09:15{
     "error_id": 404,
 7    "error_message": "no method found with this name",
     "error_name": "no_method"
 }
 
-◊  Given user call the get endpoint to get badges "109 tr" for 'recipients'                    # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
-ª  Then user receive a 400 HTTP response                                                       # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
-‰  And verify response parameters are available                                                # com.example.stackExchange.stepdefs.GeneralSteps.verifyresponseparametersavailable(java.util.List<java.util.List<java.lang.String>>)
+Ê  Given user call the get endpoint to get badges "109 tr" for 'recipients'                                   # com.example.stackExchange.stepdefs.GeneralSteps.usercallthegetendpointtotogetbadges(java.lang.String,java.lang.String)
+   Then user receive a 400 HTTP response                                                                      # com.example.stackExchange.stepdefs.GeneralSteps.userreceivehttpresponse(java.lang.Integer)
+Û  And verify response parameters are available                                                               # com.example.stackExchange.stepdefs.GeneralSteps.verifyresponseparametersavailable(java.util.List<java.util.List<java.lang.String>>)
   Ä‚îå‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îê
   Z‚îÇ Share your Cucumber Report with your team at https://reports.cucumber.io          ‚îÇ
   Z‚îÇ Activate publishing with one of the following:                                    ‚îÇ

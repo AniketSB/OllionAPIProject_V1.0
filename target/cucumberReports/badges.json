@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-02-07T06:40:49.577Z",
+        "start_timestamp": "2024-02-07T09:15:08.103Z",
         "line": 10,
         "name": "Get the badges identified by ids.",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5711934000,
+              "duration": 9371415000,
               "status": "passed"
             },
             "line": 6,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 186383000,
+              "duration": 85737000,
               "status": "passed"
             },
             "line": 7,
@@ -62,7 +62,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-02-07T06:40:55.724Z",
+        "start_timestamp": "2024-02-07T09:15:17.659Z",
         "line": 11,
         "name": "Get the badges identified by ids.",
         "description": "",
@@ -72,7 +72,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1622193000,
+              "duration": 1772938000,
               "status": "passed"
             },
             "line": 6,
@@ -94,7 +94,7 @@
           },
           {
             "result": {
-              "duration": 307000,
+              "duration": 393000,
               "status": "passed"
             },
             "line": 7,
@@ -121,7 +121,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-02-07T06:40:57.356Z",
+        "start_timestamp": "2024-02-07T09:15:19.448Z",
         "line": 12,
         "name": "Get the badges identified by ids.",
         "description": "",
@@ -131,7 +131,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1669368000,
+              "duration": 2148610000,
               "status": "passed"
             },
             "line": 6,
@@ -153,7 +153,7 @@
           },
           {
             "result": {
-              "duration": 1511000,
+              "duration": 505000,
               "status": "passed"
             },
             "line": 7,
@@ -180,7 +180,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-02-07T06:40:59.051Z",
+        "start_timestamp": "2024-02-07T09:15:21.607Z",
         "line": 20,
         "name": "To verify get badges endpoint returns error response for incorrect badge id",
         "description": "",
@@ -190,7 +190,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1675751000,
+              "duration": 1651768000,
               "status": "passed"
             },
             "line": 16,
@@ -212,7 +212,7 @@
           },
           {
             "result": {
-              "duration": 1682000,
+              "duration": 733000,
               "status": "passed"
             },
             "line": 17,
@@ -239,7 +239,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-02-07T06:41:00.744Z",
+        "start_timestamp": "2024-02-07T09:15:23.271Z",
         "line": 31,
         "name": "To verify get badges endpoint returns correct error message for incorrect badge id",
         "description": "",
@@ -249,7 +249,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1818650000,
+              "duration": 1632822000,
               "status": "passed"
             },
             "line": 24,
@@ -271,7 +271,7 @@
           },
           {
             "result": {
-              "duration": 370000,
+              "duration": 917000,
               "status": "passed"
             },
             "line": 25,
@@ -289,7 +289,7 @@
           },
           {
             "result": {
-              "duration": 732848000,
+              "duration": 388105000,
               "status": "passed"
             },
             "line": 26,
@@ -344,7 +344,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-02-07T06:41:03.315Z",
+        "start_timestamp": "2024-02-07T09:15:25.309Z",
         "line": 10,
         "name": "Get the badges identified by tags.",
         "description": "",
@@ -354,7 +354,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1849276000,
+              "duration": 1858170000,
               "status": "passed"
             },
             "line": 6,
@@ -376,7 +376,7 @@
           },
           {
             "result": {
-              "duration": 399000,
+              "duration": 176000,
               "status": "passed"
             },
             "line": 7,
@@ -403,7 +403,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-02-07T06:41:05.186Z",
+        "start_timestamp": "2024-02-07T09:15:27.179Z",
         "line": 18,
         "name": "To verify get badges endpoint returns error response for incorrect tags",
         "description": "",
@@ -413,7 +413,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1712846000,
+              "duration": 1822212000,
               "status": "passed"
             },
             "line": 14,
@@ -435,7 +435,7 @@
           },
           {
             "result": {
-              "duration": 583000,
+              "duration": 1832000,
               "status": "passed"
             },
             "line": 15,
@@ -462,7 +462,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-02-07T06:41:06.909Z",
+        "start_timestamp": "2024-02-07T09:15:29.024Z",
         "line": 19,
         "name": "To verify get badges endpoint returns error response for incorrect tags",
         "description": "",
@@ -472,7 +472,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1725428000,
+              "duration": 1600900000,
               "status": "passed"
             },
             "line": 14,
@@ -494,7 +494,7 @@
           },
           {
             "result": {
-              "duration": 488000,
+              "duration": 232000,
               "status": "passed"
             },
             "line": 15,
@@ -521,7 +521,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-02-07T06:41:08.647Z",
+        "start_timestamp": "2024-02-07T09:15:30.637Z",
         "line": 20,
         "name": "To verify get badges endpoint returns error response for incorrect tags",
         "description": "",
@@ -531,7 +531,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1836831000,
+              "duration": 1529616000,
               "status": "passed"
             },
             "line": 14,
@@ -553,7 +553,7 @@
           },
           {
             "result": {
-              "duration": 1335000,
+              "duration": 184000,
               "status": "passed"
             },
             "line": 15,
@@ -580,7 +580,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-02-07T06:41:10.503Z",
+        "start_timestamp": "2024-02-07T09:15:32.171Z",
         "line": 31,
         "name": "To verify get badges endpoint returns correct error message for incorrect tags",
         "description": "",
@@ -590,7 +590,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1853501000,
+              "duration": 1721643000,
               "status": "passed"
             },
             "line": 24,
@@ -612,7 +612,7 @@
           },
           {
             "result": {
-              "duration": 4386000,
+              "duration": 339000,
               "status": "passed"
             },
             "line": 25,
@@ -630,7 +630,7 @@
           },
           {
             "result": {
-              "duration": 72485000,
+              "duration": 48683000,
               "status": "passed"
             },
             "line": 26,
@@ -685,7 +685,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-02-07T06:41:12.454Z",
+        "start_timestamp": "2024-02-07T09:15:33.951Z",
         "line": 10,
         "name": "Get badges recently awarded on the site.",
         "description": "",
@@ -695,7 +695,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1839976000,
+              "duration": 1707087000,
               "status": "passed"
             },
             "line": 6,
@@ -717,7 +717,7 @@
           },
           {
             "result": {
-              "duration": 1527000,
+              "duration": 399000,
               "status": "passed"
             },
             "line": 7,
@@ -744,7 +744,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-02-07T06:41:14.310Z",
+        "start_timestamp": "2024-02-07T09:15:35.672Z",
         "line": 11,
         "name": "Get badges recently awarded on the site.",
         "description": "",
@@ -754,7 +754,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1814165000,
+              "duration": 1619418000,
               "status": "passed"
             },
             "line": 6,
@@ -776,7 +776,7 @@
           },
           {
             "result": {
-              "duration": 178000,
+              "duration": 252000,
               "status": "passed"
             },
             "line": 7,
@@ -803,17 +803,17 @@
         ]
       },
       {
-        "start_timestamp": "2024-02-07T06:41:16.128Z",
+        "start_timestamp": "2024-02-07T09:15:37.298Z",
         "line": 20,
-        "name": "To verify get badges endpoint returns error response for incorrect badge id",
+        "name": "To verify get badges endpoint returns error response for incorrect badge id for recipients",
         "description": "",
-        "id": "returns-result-for-stackexchange-badges-api;to-verify-get-badges-endpoint-returns-error-response-for-incorrect-badge-id;;2",
+        "id": "returns-result-for-stackexchange-badges-api;to-verify-get-badges-endpoint-returns-error-response-for-incorrect-badge-id-for-recipients;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1749758000,
+              "duration": 1636678000,
               "status": "passed"
             },
             "line": 16,
@@ -835,7 +835,7 @@
           },
           {
             "result": {
-              "duration": 607000,
+              "duration": 1288000,
               "status": "passed"
             },
             "line": 17,
@@ -862,17 +862,17 @@
         ]
       },
       {
-        "start_timestamp": "2024-02-07T06:41:17.891Z",
+        "start_timestamp": "2024-02-07T09:15:38.953Z",
         "line": 21,
-        "name": "To verify get badges endpoint returns error response for incorrect badge id",
+        "name": "To verify get badges endpoint returns error response for incorrect badge id for recipients",
         "description": "",
-        "id": "returns-result-for-stackexchange-badges-api;to-verify-get-badges-endpoint-returns-error-response-for-incorrect-badge-id;;3",
+        "id": "returns-result-for-stackexchange-badges-api;to-verify-get-badges-endpoint-returns-error-response-for-incorrect-badge-id-for-recipients;;3",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1573803000,
+              "duration": 1609262000,
               "status": "passed"
             },
             "line": 16,
@@ -894,7 +894,7 @@
           },
           {
             "result": {
-              "duration": 1184000,
+              "duration": 2864000,
               "status": "passed"
             },
             "line": 17,
@@ -921,17 +921,17 @@
         ]
       },
       {
-        "start_timestamp": "2024-02-07T06:41:19.482Z",
+        "start_timestamp": "2024-02-07T09:15:40.593Z",
         "line": 32,
-        "name": "To verify get badges endpoint returns error response for incorrect badge id",
+        "name": "To verify get badges endpoint returns error response for incorrect badge id for recipients",
         "description": "",
-        "id": "returns-result-for-stackexchange-badges-api;to-verify-get-badges-endpoint-returns-error-response-for-incorrect-badge-id;;2",
+        "id": "returns-result-for-stackexchange-badges-api;to-verify-get-badges-endpoint-returns-error-response-for-incorrect-badge-id-for-recipients;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1615699000,
+              "duration": 1722289000,
               "status": "passed"
             },
             "line": 25,
@@ -953,7 +953,7 @@
           },
           {
             "result": {
-              "duration": 429000,
+              "duration": 687000,
               "status": "passed"
             },
             "line": 26,
@@ -971,7 +971,7 @@
           },
           {
             "result": {
-              "duration": 47546000,
+              "duration": 108997000,
               "status": "passed"
             },
             "line": 27,
